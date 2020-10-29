@@ -2,25 +2,10 @@
 
 Idea profiles for embedding to qodana docker image
 
-## Getting Started
-
-Download links:
-
-SSH clone URL: ssh://git@git.jetbrains.team/sa/qodana-embedded-profiles.git
-
-HTTPS clone URL: https://git.jetbrains.team/sa/qodana-embedded-profiles.git
-
-
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-## Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Examples
-```
+## Project structure
+Each qodana docker image should have own top level directory. 
+Top level directories contains profile files, profile file could be stored under subdirectories.  
+Profile ```dev/php/qodana.php.default.xml``` could be referenced in ```qodana:dev``` image as ```php/qodana.php.default```.
 
 ## Deployment
 

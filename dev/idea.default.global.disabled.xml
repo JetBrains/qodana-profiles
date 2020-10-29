@@ -1,0 +1,17 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="idea.default.global.disabled" />
+    <inspection_tool class="unused" enabled="false" level="WARNING" enabled_by_default="false"/>
+    <inspection_tool class="CanBeFinal" enabled="false" level="WARNING" enabled_by_default="false"/>
+    <inspection_tool class="Java9RedundantRequiresStatement" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="UnnecessaryModuleDependencyInspection" enabled="false" level="WARNING" enabled_by_default="false"/>
+    <inspection_tool class="SameParameterValue" enabled="false" level="WARNING" enabled_by_default="false"/>
+    <inspection_tool class="RedundantThrows" enabled="false" level="WARNING" enabled_by_default="false"/>
+    <inspection_tool class="EmptyMethod" enabled="false" level="WARNING" enabled_by_default="false"/>
+    <inspection_tool class="SameReturnValue" enabled="false" level="WARNING" enabled_by_default="false"/>
+    <inspection_tool class="BooleanMethodIsAlwaysInverted" enabled="false" level="WARNING" enabled_by_default="false"/>
+    <inspection_tool class="PackageName" enabled="false" level="WARNING" enabled_by_default="false"/>
+    <inspection_tool class="UnusedReturnValue" enabled="false" level="WARNING" enabled_by_default="false"/>
+    <inspection_tool class="PhpUnused" enabled="false" level="WARNING" enabled_by_default="false"/>
+  </profile>
+</component>
