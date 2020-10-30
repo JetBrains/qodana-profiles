@@ -3,9 +3,11 @@
 Idea profiles for embedding to qodana docker image
 
 ## Project structure
-Each qodana docker image should have own top level directory. 
-Top level directories contains profile files, profile file could be stored under subdirectories.  
-Profile ```dev/php/qodana.php.default.xml``` could be referenced in ```qodana:dev``` image as ```php/qodana.php.default```.
+Each qodana docker image should have own branch in this repo. 
+```.idea/inspectionProfiles/*.xml``` are copied into corresponding qodana docker image as embedded IDE profiles.
+Each profile should have proper name in structure ```<option name="myName" value="%profileName%" />```, 
+profile could be referenced in ```qodana:dev``` image as ```%profileName%```.
+Profiles in branches for public images should have prefix ```qodana.```
 
 ## Deployment
 
