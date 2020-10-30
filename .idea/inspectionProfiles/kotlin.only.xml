@@ -384,6 +384,7 @@
     <inspection_tool class="ArrayInDataClass" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="ArrayObjectsEquals" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ArraysAsListWithZeroOrOneArgument" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AssertBetweenInconvertibleTypes" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="AssertEqualsBetweenInconvertibleTypes" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="AssertEqualsBetweenInconvertibleTypesTestNG" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="AssertWithSideEffects" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -463,6 +464,7 @@
     <inspection_tool class="CheckValidXmlInScriptTagBody" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="CheckXmlFileWithXercesValidator" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="ClashingTraitMethods" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ClassCanBeRecord" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="ClassEscapesItsScope" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ClassGetClass" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ClassInDefaultPackage" enabled="false" level="ERROR" enabled_by_default="false" />
@@ -484,6 +486,7 @@
     <inspection_tool class="CollectionAddedToSelf" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="CommaExpressionJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="CommandLineInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CommentedOutCode" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="ComparatorCombinators" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ComparatorMethodParameterNotUsed" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ComparatorResultComparison" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -600,6 +603,7 @@
     <inspection_tool class="DeprecatedClassUsageInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="DeprecatedIsStillUsed" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="Deprecation" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="DevKitPropertiesQuotesValidation" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="DialogTitleCapitalization" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="DiamondCanBeReplacedWithExplicitTypeArguments" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="DifferentKotlinGradleVersion" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -644,6 +648,7 @@
     <inspection_tool class="ES6BindWithArrowFunction" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ES6CheckImport" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="ES6ClassMemberInitializationOrder" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ES6ConvertIndexedForToForOf" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="ES6ConvertLetToConst" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="ES6ConvertModuleExportToExport" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="ES6ConvertRequireIntoImport" enabled="false" level="INFORMATION" enabled_by_default="false" />
@@ -746,6 +751,7 @@
     <inspection_tool class="FieldCanBeLocal" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="FieldMayBeFinal" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="FileEqualsUsage" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FillPermitsList" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="FinalPrivateMethod" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="FinalStaticMethod" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="FinalizeCallsSuperFinalize" enabled="false" level="WARNING" enabled_by_default="false">
@@ -799,10 +805,12 @@
     <inspection_tool class="GherkinMisplacedBackground" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="GherkinScenarioToScenarioOutline" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="Glassfish" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="GrAnnotationReferencingUnknownIdentifiers" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="GrDeprecatedAPIUsage" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="GrEqualsBetweenInconvertibleTypes" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="GrFinalVariableAccess" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="GrMethodMayBeStatic" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="GrNamedVariantLabels" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="GrPackage" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="GrReassignedInClosureLocalVar" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="GrUnnecessaryAlias" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
@@ -925,6 +933,8 @@
       <option name="myCustomValuesEnabled" value="true" />
     </inspection_tool>
     <inspection_tool class="HtmlUnknownTarget" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HttpRequestContentLengthIsIgnored" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HttpRequestPlaceholder" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="I18nForm" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="IdempotentLoopBody" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="IfCanBeAssertion" enabled="false" level="INFORMATION" enabled_by_default="false" />
@@ -968,6 +978,7 @@
       <option name="REPORT_DUPLICATED_PROPERTIES" value="true" />
     </inspection_tool>
     <inspection_tool class="IncorrectOnMessageMethodsInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="IncorrectParentDisposable" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="IndexOfReplaceableByContains" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="IndexZeroUsage" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="InfiniteLoopJS" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -978,6 +989,7 @@
     <inspection_tool class="InjectionNotApplicable" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="InjectionValueTypeInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="InnerClassMayBeStatic" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="InsertLiteralUnderscores" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="InspectionDescriptionNotFoundInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="InspectionMappingConsistency" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="InspectionUniqueToolbarId" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -985,6 +997,7 @@
     <inspection_tool class="InstantiatingObjectToGetClassObject" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="InstantiationOfUtilityClass" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="IntegerDivisionInFloatingPointContext" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="IntegerMultiplicationImplicitCastToLong" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="IntentionDescriptionNotFoundInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="InterceptionAnnotationWithoutRuntimeRetention" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="InterfaceMethodClashesWithObject" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1064,6 +1077,7 @@
     <inspection_tool class="JSUnresolvedExtXType" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JSUnresolvedFunction" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="JSUnresolvedLibraryURL" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="JSUnresolvedReactComponent" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="JSUnresolvedVariable" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="JSUntypedDeclaration" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JSUnusedAssignment" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1072,7 +1086,9 @@
     <inspection_tool class="JSValidateJSDoc" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JSValidateTypes" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="JSXNamespaceValidation" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="JUnit3StyleTestMethodInJUnit4Class" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JUnit4AnnotatedMethodInJUnit3TestCase" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="JUnit5AssertionsConverter" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JUnit5MalformedNestedClass" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JUnit5MalformedParameterized" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JUnit5MalformedRepeated" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1166,6 +1182,7 @@
     <inspection_tool class="JspDirectiveInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="JspPropertiesInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="JspTagBodyContent" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Junit4Converter" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="JupyterKernelInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JupyterPackageInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="KotlinDoubleNegation" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
@@ -1180,6 +1197,7 @@
     <inspection_tool class="LanguageMismatch" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="CHECK_NON_ANNOTATED_REFERENCES" value="true" />
     </inspection_tool>
+    <inspection_tool class="LeakableMapKey" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="LengthOneStringsInConcatenation" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="LessResolvedByNameOnly" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="LessUnresolvedMixin" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1208,10 +1226,12 @@
     <inspection_tool class="MapGetWithNotNullAssertionOperator" enabled="false" level="INFO" enabled_by_default="false" />
     <inspection_tool class="MarkdownUnresolvedFileReference" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MarkedForRemoval" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="MaskedAssertion" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MathRandomCastToInt" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MavenDuplicateDependenciesInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MavenDuplicatePluginInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MavenModelInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="MavenParentMissedVersionInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="MavenPropertyInParent" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MavenRedundantGroupId" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MayBeConstant" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
@@ -1220,6 +1240,9 @@
     <inspection_tool class="MethodCanBeVariableArityMethod" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="MethodNameSameAsClassName" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MethodRefCanBeReplacedWithLambda" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="MicronautDataMethodInconsistencyInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="MicronautDataRepositoryMethodParametersInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MicronautDataRepositoryMethodReturnTypeInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MimeType" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="MinMaxValuesInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MismatchedArrayReadWrite" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1245,12 +1268,16 @@
       <option name="ignoreAnonymousClassMethods" value="false" />
     </inspection_tool>
     <inspection_tool class="MissingRecentApi" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="MissingSerialAnnotation" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MisspelledHeader" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="MnIncorrectMimeTypeReference" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="MnProperties" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MnUnresolvedPathVariable" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="MnYaml" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MongoJSExtResolveInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MongoJSExtSideEffectsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MongoJSResolveInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MongoJSSideEffectsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MoveFieldAssignmentToInitializer" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="MoveLambdaOutsideParentheses" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="MoveSuspiciousCallableReferenceIntoParentheses" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
@@ -1321,6 +1348,7 @@
     <inspection_tool class="OptionalExpectation" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="OptionalGetWithoutIsPresent" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="OptionalIsPresent" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="OptionalToIf" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="OptionalUsedAsFieldOrParameterType" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="OraDeprecateTypeInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="OrredNotEqualExpression" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1330,6 +1358,7 @@
     <inspection_tool class="PSScriptAnalyzer" enabled="false" level="SERVER PROBLEM" enabled_by_default="false" />
     <inspection_tool class="PackageAccessibility" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="PackageDirectoryMismatch" enabled="false" level="INFO" enabled_by_default="false" />
+    <inspection_tool class="PackageInfoWithoutPackage" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PackageJsonMismatchedDependency" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PackageName" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PageflowModelInspection" enabled="false" level="ERROR" enabled_by_default="false" />
@@ -1590,7 +1619,9 @@
     </inspection_tool>
     <inspection_tool class="PyramidSetupInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="QsPrivateBeanMembersInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="QsProperties" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="QsUndeclaredPathMimeTypesInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="QsYaml" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="Query_bound_parameters" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="Query_index_required" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="Query_restricted" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1607,6 +1638,7 @@
     <inspection_tool class="ReactiveStreamsUnusedPublisher" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ReactorAutomaticDebugger" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="ReadWriteStringCanBeUsed" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RecordCanBeClass" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="RedundantArrayCreation" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantAsync" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantBackticksAroundRawStringLiteral" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1620,6 +1652,7 @@
     <inspection_tool class="RedundantEnumConstructorInvocation" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantExplicitClose" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantExplicitVariableType" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="RedundantFileCreation" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantGetter" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantIf" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantLabeledSwitchRuleCodeBlock" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1643,6 +1676,7 @@
     <inspection_tool class="RedundantTypeConversion" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="CHECK_ANY" value="true" />
     </inspection_tool>
+    <inspection_tool class="RedundantUnmodifiable" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantWith" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="ReferencesToClassesFromDefaultPackagesInJSPFile" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="ReflectionForUnavailableAnnotation" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1650,10 +1684,12 @@
       <option name="ignoreEmptySuperMethods" value="false" />
     </inspection_tool>
     <inspection_tool class="RegExpDuplicateAlternationBranch" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RegExpDuplicateCharacterInClass" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RegExpEmptyAlternationBranch" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RegExpEscapedMetaCharacter" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="RegExpOctalEscape" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="RegExpRedundantEscape" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RegExpRedundantNestedCharacterClass" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RegExpRepeatedSpace" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RegExpSingleCharAlternation" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RegExpUnexpectedAnchor" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1665,6 +1701,7 @@
     <inspection_tool class="RemoveEmptySecondaryConstructorBody" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="RemoveExplicitSuperQualifier" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="RemoveExplicitTypeArguments" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="RemoveLiteralUnderscores" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="RemoveToStringInStringTemplate" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="ReplaceAllDot" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ReplaceArrayOfWithLiteral" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
@@ -1727,6 +1764,8 @@
     <inspection_tool class="SeamJamComponentInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="SecondUnsafeCall" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SelfIncludingJspFiles" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="SerialAnnotationUsedOnWrongMember" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SerializableRecordContainsIgnoredMembers" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ServerEndpointInconsistencyInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="ServletWithoutMappingInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="SessionScopedInjectsRequestScoped" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -1735,6 +1774,7 @@
     <inspection_tool class="ShiftOutOfRangeJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SillyAssignment" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SillyAssignmentJS" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SimplifiableAssertion" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SimplifiableBooleanExpression" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SimplifiableCall" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="SimplifiableCallChain" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
@@ -1915,6 +1955,7 @@
     <inspection_tool class="SuspiciousDateFormat" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SuspiciousEqualsCombination" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="SuspiciousIntegerDivAssignment" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SuspiciousInvocationHandlerImplementation" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SuspiciousListRemoveInLoop" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SuspiciousMethodCalls" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="REPORT_CONVERTIBLE_METHOD_CALLS" value="true" />
@@ -1927,6 +1968,7 @@
       </ignored>
     </inspection_tool>
     <inspection_tool class="SuspiciousSystemArraycopy" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SuspiciousTernaryOperatorInVarargsCall" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SuspiciousToArrayCall" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SuspiciousTypeOfGuard" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SwitchLabeledRuleCanBeCodeBlock" enabled="false" level="INFORMATION" enabled_by_default="false" />
@@ -1962,6 +2004,7 @@
     <inspection_tool class="TextLabelInSwitchStatement" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ThisExpressionReferencesGlobalObjectJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ThreadRun" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ThreadWithDefaultRunMethod" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ThrowFromFinallyBlock" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ThrowFromFinallyBlockJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ThrowableInstanceNeverThrown" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -2004,6 +2047,7 @@
     <inspection_tool class="TypeScriptSuspiciousConstructorParameterAssignment" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="TypeScriptUMDGlobal" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="TypeScriptUnresolvedFunction" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="TypeScriptUnresolvedReactComponent" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="TypeScriptUnresolvedVariable" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="TypeScriptValidateGenericTypes" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="TypeScriptValidateJSTypes" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
@@ -2108,7 +2152,6 @@
       <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
     </inspection_tool>
     <inspection_tool class="UnusedLabel" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="UnusedMainParameter" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="UnusedMessageFormatParameter" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="UnusedParameters" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="UnusedProperty" enabled="false" level="WARNING" enabled_by_default="false" />
