@@ -1,8 +1,0 @@
-<component name="InspectionProjectProfileManager">
-    <profile version="1.0">
-        <option name="myName" value="default.name.coventions" />
-        <inspection_tool class="ExceptionNameDoesntEndWithException" enabled="true" level="WARNING" enabled_by_default="true">
-            <scope name="Project Files" level="WARNING" enabled="true" />
-        </inspection_tool>
-    </profile>
-</component>
