@@ -33,7 +33,16 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="AccessToNonThreadSafeStaticFieldFromInstance" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="nonThreadSafeClasses">
+          <value />
+        </option>
+        <option name="nonThreadSafeTypes" value="" />
+      </scope>
+      <option name="nonThreadSafeClasses">
+        <value />
+      </option>
+      <option name="nonThreadSafeTypes" value="" />
     </inspection_tool>
     <inspection_tool class="AccessToStaticFieldLockedOnInstance" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -515,7 +524,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="AssignmentToMethodParameter" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreTransformationOfOriginalParameter" value="false" />
+      </scope>
+      <option name="ignoreTransformationOfOriginalParameter" value="false" />
     </inspection_tool>
     <inspection_tool class="AssignmentToNull" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -547,13 +559,44 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="BadExceptionCaught" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="exceptionsString" value="" />
+        <option name="exceptions">
+          <value />
+        </option>
+      </scope>
+      <option name="exceptionsString" value="" />
+      <option name="exceptions">
+        <value />
+      </option>
     </inspection_tool>
     <inspection_tool class="BadExceptionDeclared" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="exceptionsString" value="" />
+        <option name="exceptions">
+          <value />
+        </option>
+        <option name="ignoreTestCases" value="false" />
+        <option name="ignoreLibraryOverrides" value="false" />
+      </scope>
+      <option name="exceptionsString" value="" />
+      <option name="exceptions">
+        <value />
+      </option>
+      <option name="ignoreTestCases" value="false" />
+      <option name="ignoreLibraryOverrides" value="false" />
     </inspection_tool>
     <inspection_tool class="BadExceptionThrown" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="exceptionsString" value="" />
+        <option name="exceptions">
+          <value />
+        </option>
+      </scope>
+      <option name="exceptionsString" value="" />
+      <option name="exceptions">
+        <value />
+      </option>
     </inspection_tool>
     <inspection_tool class="BadExpressionStatementJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="BadOddness" enabled="false" level="WARNING" enabled_by_default="false">
@@ -632,10 +675,20 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="CallToSimpleGetterInClass" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreGetterCallsOnOtherObjects" value="false" />
+        <option name="onlyReportPrivateGetter" value="false" />
+      </scope>
+      <option name="ignoreGetterCallsOnOtherObjects" value="false" />
+      <option name="onlyReportPrivateGetter" value="false" />
     </inspection_tool>
     <inspection_tool class="CallToSimpleSetterInClass" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreSetterCallsOnOtherObjects" value="false" />
+        <option name="onlyReportPrivateSetter" value="false" />
+      </scope>
+      <option name="ignoreSetterCallsOnOtherObjects" value="false" />
+      <option name="onlyReportPrivateSetter" value="false" />
     </inspection_tool>
     <inspection_tool class="CallToStringConcatCanBeReplacedByOperator" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -664,7 +717,12 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="CastThatLosesPrecision" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreIntegerCharCasts" value="false" />
+        <option name="ignoreOverflowingByteCasts" value="false" />
+      </scope>
+      <option name="ignoreIntegerCharCasts" value="false" />
+      <option name="ignoreOverflowingByteCasts" value="false" />
     </inspection_tool>
     <inspection_tool class="CastToConcreteClass" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -700,7 +758,12 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="ChainedMethodCall" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignoreFieldInitializations" value="true" />
+        <option name="m_ignoreThisSuperCalls" value="true" />
+      </scope>
+      <option name="m_ignoreFieldInitializations" value="true" />
+      <option name="m_ignoreThisSuperCalls" value="true" />
     </inspection_tool>
     <inspection_tool class="ChangeToMethod" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="ChangeToOperator" enabled="false" level="WEAK WARNING" enabled_by_default="false">
@@ -889,7 +952,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="ConfusingElse" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="reportWhenNoStatementFollow" value="true" />
+      </scope>
+      <option name="reportWhenNoStatementFollow" value="true" />
     </inspection_tool>
     <inspection_tool class="ConfusingFloatingPointLiteral" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -1183,7 +1249,12 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="DuplicateStringLiteralInspection" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="MIN_STRING_LENGTH" value="5" />
+        <option name="IGNORE_PROPERTY_KEYS" value="false" />
+      </scope>
+      <option name="MIN_STRING_LENGTH" value="5" />
+      <option name="IGNORE_PROPERTY_KEYS" value="false" />
     </inspection_tool>
     <inspection_tool class="DuplicateThrows" enabled="true" level="WARNING" enabled_by_default="true">
       <scope name="android" level="WARNING" enabled="false" />
@@ -1387,7 +1458,12 @@
     </inspection_tool>
     <inspection_tool class="ExceptionCaughtLocallyJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ExceptionFromCatchWhichDoesntWrap" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreGetMessage" value="false" />
+        <option name="ignoreCantWrap" value="false" />
+      </scope>
+      <option name="ignoreGetMessage" value="false" />
+      <option name="ignoreCantWrap" value="false" />
     </inspection_tool>
     <inspection_tool class="ExceptionNameDoesntEndWithException" enabled="true" level="WARNING" enabled_by_default="true">
       <scope name="android" level="WARNING" enabled="false" />
@@ -1530,7 +1606,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="ForLoopWithMissingComponent" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreCollectionLoops" value="false" />
+      </scope>
+      <option name="ignoreCollectionLoops" value="false" />
     </inspection_tool>
     <inspection_tool class="ForeachStatement" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -1680,7 +1759,10 @@
       <scope name="android" level="ERROR" enabled="false" />
     </inspection_tool>
     <inspection_tool class="GroovyDoubleCheckedLocking" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreOnVolatileVariables" value="false" />
+      </scope>
+      <option name="ignoreOnVolatileVariables" value="false" />
     </inspection_tool>
     <inspection_tool class="GroovyDoubleNegation" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -2007,7 +2089,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="GroovyWhileLoopSpinsOnField" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreNonEmtpyLoops" value="false" />
+      </scope>
+      <option name="ignoreNonEmtpyLoops" value="false" />
     </inspection_tool>
     <inspection_tool class="GspInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="GtkPreferredJComboBoxRenderer" enabled="true" level="WARNING" enabled_by_default="true">
@@ -2039,7 +2124,28 @@
     <inspection_tool class="GwtUiXmlReferences" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="HamlNestedTagContent" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="HardCodedStringLiteral" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreForAssertStatements" value="true" />
+        <option name="ignoreForExceptionConstructors" value="true" />
+        <option name="ignoreForSpecifiedExceptionConstructors" value="" />
+        <option name="ignoreForJUnitAsserts" value="true" />
+        <option name="ignoreForClassReferences" value="true" />
+        <option name="ignoreForPropertyKeyReferences" value="true" />
+        <option name="ignoreForNonAlpha" value="true" />
+        <option name="ignoreAssignedToConstants" value="false" />
+        <option name="ignoreToString" value="false" />
+        <option name="nonNlsCommentPattern" value="NON-NLS" />
+      </scope>
+      <option name="ignoreForAssertStatements" value="true" />
+      <option name="ignoreForExceptionConstructors" value="true" />
+      <option name="ignoreForSpecifiedExceptionConstructors" value="" />
+      <option name="ignoreForJUnitAsserts" value="true" />
+      <option name="ignoreForClassReferences" value="true" />
+      <option name="ignoreForPropertyKeyReferences" value="true" />
+      <option name="ignoreForNonAlpha" value="true" />
+      <option name="ignoreAssignedToConstants" value="false" />
+      <option name="ignoreToString" value="false" />
+      <option name="nonNlsCommentPattern" value="NON-NLS" />
     </inspection_tool>
     <inspection_tool class="HardcodedActionUrl" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="HardwiredNamespacePrefix" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -2167,7 +2273,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="IfStatementWithTooManyBranches" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_limit" value="3" />
+      </scope>
+      <option name="m_limit" value="3" />
     </inspection_tool>
     <inspection_tool class="IfThenToElvis" enabled="false" level="WEAK WARNING" enabled_by_default="false">
       <scope name="android" level="WEAK WARNING" enabled="false" />
@@ -2191,13 +2300,23 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="ImplicitCallToSuper" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignoreForObjectSubclasses" value="false" />
+      </scope>
+      <option name="m_ignoreForObjectSubclasses" value="false" />
     </inspection_tool>
     <inspection_tool class="ImplicitDefaultCharsetUsage" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="ImplicitNumericConversion" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreWideningConversions" value="false" />
+        <option name="ignoreCharConversions" value="false" />
+        <option name="ignoreConstantConversions" value="false" />
+      </scope>
+      <option name="ignoreWideningConversions" value="false" />
+      <option name="ignoreCharConversions" value="false" />
+      <option name="ignoreConstantConversions" value="false" />
     </inspection_tool>
     <inspection_tool class="ImplicitTypeConversion" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="BITS" value="1720" />
@@ -2268,7 +2387,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="InstanceVariableInitialization" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignorePrimitives" value="false" />
+      </scope>
+      <option name="m_ignorePrimitives" value="false" />
     </inspection_tool>
     <inspection_tool class="InstanceVariableNamingConvention" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -2277,7 +2399,12 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="InstanceVariableUninitializedUse" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignorePrimitives" value="false" />
+        <option name="annotationNamesString" value="" />
+      </scope>
+      <option name="m_ignorePrimitives" value="false" />
+      <option name="annotationNamesString" value="" />
     </inspection_tool>
     <inspection_tool class="InstanceofCatchParameter" enabled="true" level="WARNING" enabled_by_default="true">
       <scope name="android" level="WARNING" enabled="false" />
@@ -2310,7 +2437,9 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="IntegerMultiplicationImplicitCastToLong" enabled="true" level="WARNING" enabled_by_default="true">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreNonOverflowingCompileTimeConstants" value="true" />
+      </scope>
       <option name="ignoreNonOverflowingCompileTimeConstants" value="true" />
     </inspection_tool>
     <inspection_tool class="IntentionDescriptionNotFoundInspection" enabled="false" level="WARNING" enabled_by_default="false">
@@ -2348,10 +2477,16 @@
     </inspection_tool>
     <inspection_tool class="JBoss" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="JDBCResource" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="insideTryAllowed" value="false" />
+      </scope>
+      <option name="insideTryAllowed" value="false" />
     </inspection_tool>
     <inspection_tool class="JNDIResource" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="insideTryAllowed" value="false" />
+      </scope>
+      <option name="insideTryAllowed" value="false" />
     </inspection_tool>
     <inspection_tool class="JRubyDeprecatedJavaMethodUsageInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JRubyImplementInterfaceInspection" enabled="false" level="ERROR" enabled_by_default="false" />
@@ -2751,7 +2886,10 @@
       <option name="CHECK_NON_ANNOTATED_REFERENCES" value="true" />
     </inspection_tool>
     <inspection_tool class="LawOfDemeter" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreLibraryCalls" value="true" />
+      </scope>
+      <option name="ignoreLibraryCalls" value="true" />
     </inspection_tool>
     <inspection_tool class="LeakingThis" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="LengthOneStringInIndexOf" enabled="false" level="WARNING" enabled_by_default="false">
@@ -2779,7 +2917,12 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="LocalCanBeFinal" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="REPORT_VARIABLES" value="true" />
+        <option name="REPORT_PARAMETERS" value="true" />
+      </scope>
+      <option name="REPORT_VARIABLES" value="true" />
+      <option name="REPORT_PARAMETERS" value="true" />
     </inspection_tool>
     <inspection_tool class="LocalVariableHidingMemberVariable" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false">
@@ -2790,7 +2933,18 @@
       <option name="m_ignoreStaticMethods" value="true" />
     </inspection_tool>
     <inspection_tool class="LocalVariableNamingConvention" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignoreForLoopParameters" value="false" />
+        <option name="m_ignoreCatchParameters" value="false" />
+        <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+        <option name="m_minLength" value="1" />
+        <option name="m_maxLength" value="20" />
+      </scope>
+      <option name="m_ignoreForLoopParameters" value="false" />
+      <option name="m_ignoreCatchParameters" value="false" />
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="1" />
+      <option name="m_maxLength" value="20" />
     </inspection_tool>
     <inspection_tool class="LocalVariableOfConcreteClass" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -2811,7 +2965,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="LoopConditionNotUpdatedInsideLoop" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreIterators" value="false" />
+      </scope>
+      <option name="ignoreIterators" value="false" />
     </inspection_tool>
     <inspection_tool class="LoopStatementThatDoesntLoopJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="LoopStatementsThatDontLoop" enabled="true" level="WARNING" enabled_by_default="true">
@@ -2985,7 +3142,10 @@
     </inspection_tool>
     <inspection_tool class="MissingRecentApi" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="MissortedModifiers" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_requireAnnotationsFirst" value="true" />
+      </scope>
+      <option name="m_requireAnnotationsFirst" value="true" />
     </inspection_tool>
     <inspection_tool class="MisspelledCompareTo" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="MisspelledEquals" enabled="true" level="WARNING" enabled_by_default="true">
@@ -3042,7 +3202,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="NegatedConditional" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignoreNegatedNullComparison" value="true" />
+      </scope>
+      <option name="m_ignoreNegatedNullComparison" value="true" />
     </inspection_tool>
     <inspection_tool class="NegatedConditionalExpression" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -3051,7 +3214,12 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="NegatedIfElse" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignoreNegatedNullComparison" value="true" />
+        <option name="m_ignoreNegatedZeroComparison" value="false" />
+      </scope>
+      <option name="m_ignoreNegatedNullComparison" value="true" />
+      <option name="m_ignoreNegatedZeroComparison" value="false" />
     </inspection_tool>
     <inspection_tool class="NegativelyNamedBooleanVariable" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -3063,7 +3231,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="NestedMethodCall" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignoreFieldInitializations" value="true" />
+      </scope>
+      <option name="m_ignoreFieldInitializations" value="true" />
     </inspection_tool>
     <inspection_tool class="NestedSwitchStatement" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -3118,7 +3289,14 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="NonBooleanMethodNameMayNotStartWithQuestion" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="questionString" value="add,are,can,check,contains,could,endsWith,equals,has,is,matches,must,put,remove,shall,should,startsWith,was,were,will,would" />
+        <option name="ignoreBooleanMethods" value="false" />
+        <option name="onlyWarnOnBaseMethods" value="true" />
+      </scope>
+      <option name="questionString" value="add,are,can,check,contains,could,endsWith,equals,has,is,matches,must,put,remove,shall,should,startsWith,was,were,will,would" />
+      <option name="ignoreBooleanMethods" value="false" />
+      <option name="onlyWarnOnBaseMethods" value="true" />
     </inspection_tool>
     <inspection_tool class="NonDefaultConstructor" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="NonExceptionNameEndsWithException" enabled="true" level="WARNING" enabled_by_default="true">
@@ -3257,7 +3435,14 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="ObjectEquality" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignoreEnums" value="true" />
+        <option name="m_ignoreClassObjects" value="true" />
+        <option name="m_ignorePrivateConstructors" value="false" />
+      </scope>
+      <option name="m_ignoreEnums" value="true" />
+      <option name="m_ignoreClassObjects" value="true" />
+      <option name="m_ignorePrivateConstructors" value="false" />
     </inspection_tool>
     <inspection_tool class="ObjectEqualsNull" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -3305,16 +3490,27 @@
     </inspection_tool>
     <inspection_tool class="OraDeprecateTypeInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="OverloadedMethodsWithSameNumberOfParameters" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreInconvertibleTypes" value="true" />
+      </scope>
+      <option name="ignoreInconvertibleTypes" value="true" />
     </inspection_tool>
     <inspection_tool class="OverloadedVarargsMethod" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="OverlyComplexArithmeticExpression" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_limit" value="6" />
+      </scope>
+      <option name="m_limit" value="6" />
     </inspection_tool>
     <inspection_tool class="OverlyComplexBooleanExpression" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_limit" value="3" />
+        <option name="m_ignorePureConjunctionsDisjunctions" value="true" />
+      </scope>
+      <option name="m_limit" value="3" />
+      <option name="m_ignorePureConjunctionsDisjunctions" value="true" />
     </inspection_tool>
     <inspection_tool class="OverlyStrongTypeCast" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false">
@@ -3346,7 +3542,11 @@
       <option name="namePattern" value="[a-z_][a-z\d_]*(\.[a-z_][a-zA-Z\d_]*)*" />
     </inspection_tool>
     <inspection_tool class="PackageNamingConvention" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_regex" value="[a-z]*" />
+        <option name="m_minLength" value="3" />
+        <option name="m_maxLength" value="16" />
+      </scope>
       <option name="m_regex" value="[a-z]*" />
       <option name="m_minLength" value="3" />
       <option name="m_maxLength" value="16" />
@@ -3358,13 +3558,36 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="ParameterHidingMemberVariable" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignoreInvisibleFields" value="true" />
+        <option name="m_ignoreStaticMethodParametersHidingInstanceFields" value="true" />
+        <option name="m_ignoreForConstructors" value="false" />
+        <option name="m_ignoreForPropertySetters" value="false" />
+        <option name="m_ignoreForAbstractMethods" value="false" />
+      </scope>
+      <option name="m_ignoreInvisibleFields" value="true" />
+      <option name="m_ignoreStaticMethodParametersHidingInstanceFields" value="true" />
+      <option name="m_ignoreForConstructors" value="false" />
+      <option name="m_ignoreForPropertySetters" value="false" />
+      <option name="m_ignoreForAbstractMethods" value="false" />
     </inspection_tool>
     <inspection_tool class="ParameterNameDiffersFromOverriddenParameter" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignoreSingleCharacterNames" value="false" />
+        <option name="m_ignoreOverridesOfLibraryMethods" value="false" />
+      </scope>
+      <option name="m_ignoreSingleCharacterNames" value="false" />
+      <option name="m_ignoreOverridesOfLibraryMethods" value="false" />
     </inspection_tool>
     <inspection_tool class="ParameterNamingConvention" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+        <option name="m_minLength" value="1" />
+        <option name="m_maxLength" value="20" />
+      </scope>
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="1" />
+      <option name="m_maxLength" value="20" />
     </inspection_tool>
     <inspection_tool class="ParameterOfConcreteClass" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -3835,7 +4058,10 @@
       <option name="onlyWarnIfContainingClassImplementsAnInterface" value="false" />
     </inspection_tool>
     <inspection_tool class="PublicMethodWithoutLogging" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="loggerClassName" value="java.util.logging.Logger,org.slf4j.Logger,org.apache.commons.logging.Log,org.apache.log4j.Logger,org.apache.logging.log4j.Logger" />
+      </scope>
+      <option name="loggerClassName" value="java.util.logging.Logger,org.slf4j.Logger,org.apache.commons.logging.Log,org.apache.log4j.Logger,org.apache.logging.log4j.Logger" />
     </inspection_tool>
     <inspection_tool class="PyAbstractClassInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PyArgumentEqualDefaultInspection" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -3921,7 +4147,10 @@
     <inspection_tool class="Query_index_required" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="Query_restricted" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="QuestionableName" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="nameString" value="aa,abc,bad,bar,bar2,baz,baz1,baz2,baz3,bb,blah,bogus,bool,cc,dd,defau1t,dummy,dummy2,ee,fa1se,ff,foo,foo1,foo2,foo3,foobar,four,fred,fred1,fred2,gg,hh,hello,hello1,hello2,hello3,ii,nu11,one,silly,silly2,string,two,that,then,three,whi1e,var" />
+      </scope>
+      <option name="nameString" value="aa,abc,bad,bar,bar2,baz,baz1,baz2,baz3,bb,blah,bogus,bool,cc,dd,defau1t,dummy,dummy2,ee,fa1se,ff,foo,foo1,foo2,foo3,foobar,four,fred,fred1,fred2,gg,hh,hello,hello1,hello2,hello3,ii,nu11,one,silly,silly2,string,two,that,then,three,whi1e,var" />
     </inspection_tool>
     <inspection_tool class="QuickFixGetFamilyNameViolation" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -3995,7 +4224,10 @@
     </inspection_tool>
     <inspection_tool class="RedundantIf" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RedundantImplements" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreSerializable" value="false" />
+        <option name="ignoreCloneable" value="false" />
+      </scope>
       <option name="ignoreSerializable" value="false" />
       <option name="ignoreCloneable" value="false" />
     </inspection_tool>
@@ -4123,7 +4355,16 @@
     </inspection_tool>
     <inspection_tool class="ReturnFromFinallyBlockJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ReturnNull" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_reportObjectMethods" value="true" />
+        <option name="m_reportArrayMethods" value="true" />
+        <option name="m_reportCollectionMethods" value="true" />
+        <option name="m_ignorePrivateMethods" value="false" />
+      </scope>
+      <option name="m_reportObjectMethods" value="true" />
+      <option name="m_reportArrayMethods" value="true" />
+      <option name="m_reportCollectionMethods" value="true" />
+      <option name="m_ignorePrivateMethods" value="false" />
     </inspection_tool>
     <inspection_tool class="ReturnOfInnerClass" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -4580,7 +4821,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="StaticCollection" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignoreWeakCollections" value="false" />
+      </scope>
+      <option name="m_ignoreWeakCollections" value="false" />
     </inspection_tool>
     <inspection_tool class="StaticFieldReferenceOnSubclass" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -4610,7 +4854,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="StaticVariableInitialization" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignorePrimitives" value="false" />
+      </scope>
+      <option name="m_ignorePrimitives" value="false" />
     </inspection_tool>
     <inspection_tool class="StaticVariableNamingConvention" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -4619,7 +4866,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="StaticVariableUninitializedUse" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignorePrimitives" value="false" />
+      </scope>
+      <option name="m_ignorePrimitives" value="false" />
     </inspection_tool>
     <inspection_tool class="StringBufferField" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -4640,7 +4890,22 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="StringConcatenation" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreAsserts" value="false" />
+        <option name="ignoreSystemOuts" value="false" />
+        <option name="ignoreSystemErrs" value="false" />
+        <option name="ignoreThrowableArguments" value="false" />
+        <option name="ignoreConstantInitializers" value="false" />
+        <option name="ignoreInTestCode" value="false" />
+        <option name="ignoreInToString" value="false" />
+      </scope>
+      <option name="ignoreAsserts" value="false" />
+      <option name="ignoreSystemOuts" value="false" />
+      <option name="ignoreSystemErrs" value="false" />
+      <option name="ignoreThrowableArguments" value="false" />
+      <option name="ignoreConstantInitializers" value="false" />
+      <option name="ignoreInTestCode" value="false" />
+      <option name="ignoreInToString" value="false" />
     </inspection_tool>
     <inspection_tool class="StringConcatenationArgumentToLogCall" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -4682,7 +4947,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="StringReplaceableByStringBuffer" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="onlyWarnOnLoop" value="true" />
+      </scope>
+      <option name="onlyWarnOnLoop" value="true" />
     </inspection_tool>
     <inspection_tool class="StringToString" enabled="true" level="WARNING" enabled_by_default="true">
       <scope name="android" level="WARNING" enabled="false" />
@@ -4759,19 +5027,31 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="SwitchStatementDensity" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_limit" value="20" />
+      </scope>
+      <option name="m_limit" value="20" />
     </inspection_tool>
     <inspection_tool class="SwitchStatementWithConfusingDeclaration" enabled="true" level="WARNING" enabled_by_default="true">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="SwitchStatementWithTooFewBranches" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_limit" value="2" />
+      </scope>
+      <option name="m_limit" value="2" />
     </inspection_tool>
     <inspection_tool class="SwitchStatementWithTooManyBranches" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_limit" value="10" />
+      </scope>
+      <option name="m_limit" value="10" />
     </inspection_tool>
     <inspection_tool class="SwitchStatementsWithoutDefault" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignoreFullyCoveredEnums" value="true" />
+      </scope>
+      <option name="m_ignoreFullyCoveredEnums" value="true" />
     </inspection_tool>
     <inspection_tool class="SynchronizationOnGetClass" enabled="true" level="WARNING" enabled_by_default="true">
       <scope name="android" level="WARNING" enabled="false" />
@@ -4797,7 +5077,12 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="SynchronizedMethod" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_includeNativeMethods" value="true" />
+        <option name="ignoreSynchronizedSuperMethods" value="true" />
+      </scope>
+      <option name="m_includeNativeMethods" value="true" />
+      <option name="ignoreSynchronizedSuperMethods" value="true" />
     </inspection_tool>
     <inspection_tool class="SynchronizedOnLiteralObject" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -4882,7 +5167,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="ThrowCaughtLocally" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreRethrownExceptions" value="false" />
+      </scope>
+      <option name="ignoreRethrownExceptions" value="false" />
     </inspection_tool>
     <inspection_tool class="ThrowFromFinallyBlock" enabled="true" level="WARNING" enabled_by_default="true">
       <scope name="android" level="WARNING" enabled="false" />
@@ -4911,7 +5199,12 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="TooBroadScope" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_allowConstructorAsInitializer" value="false" />
+        <option name="m_onlyLookAtBlocks" value="false" />
+      </scope>
+      <option name="m_allowConstructorAsInitializer" value="false" />
+      <option name="m_onlyLookAtBlocks" value="false" />
     </inspection_tool>
     <inspection_tool class="TooBroadThrows" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -5033,7 +5326,10 @@
     </inspection_tool>
     <inspection_tool class="UnknownManifestPackage" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="UnnecessarilyQualifiedInnerClassAccess" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreReferencesNeedingImport" value="false" />
+      </scope>
+      <option name="ignoreReferencesNeedingImport" value="false" />
     </inspection_tool>
     <inspection_tool class="UnnecessarilyQualifiedStaticUsage" enabled="true" level="WARNING" enabled_by_default="true">
       <scope name="android" level="WARNING" enabled="false">
@@ -5054,7 +5350,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="UnnecessaryBlockStatement" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreSwitchBranches" value="false" />
+      </scope>
+      <option name="ignoreSwitchBranches" value="false" />
     </inspection_tool>
     <inspection_tool class="UnnecessaryBoxing" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
@@ -5115,7 +5414,10 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="UnnecessaryJavaDocLink" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreInlineLinkToSuper" value="false" />
+      </scope>
+      <option name="ignoreInlineLinkToSuper" value="false" />
     </inspection_tool>
     <inspection_tool class="UnnecessaryLabelJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="UnnecessaryLabelOnBreakStatement" enabled="false" level="WARNING" enabled_by_default="false">
@@ -5194,20 +5496,35 @@
     </inspection_tool>
     <inspection_tool class="UnparsedCustomBeanInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="UnpredictableBigDecimalConstructorCall" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreReferences" value="true" />
+        <option name="ignoreComplexLiterals" value="false" />
+      </scope>
+      <option name="ignoreReferences" value="true" />
+      <option name="ignoreComplexLiterals" value="false" />
     </inspection_tool>
     <inspection_tool class="UnproxyableBeanTypesInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="UnqualifiedFieldAccess" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="UnqualifiedInnerClassAccess" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignoreReferencesToLocalInnerClasses" value="true" />
+      </scope>
+      <option name="ignoreReferencesToLocalInnerClasses" value="true" />
     </inspection_tool>
     <inspection_tool class="UnqualifiedMethodAccess" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="UnqualifiedStaticUsage" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="m_ignoreStaticFieldAccesses" value="false" />
+        <option name="m_ignoreStaticMethodCalls" value="false" />
+        <option name="m_ignoreStaticAccessFromStaticContext" value="false" />
+      </scope>
+      <option name="m_ignoreStaticFieldAccesses" value="false" />
+      <option name="m_ignoreStaticMethodCalls" value="false" />
+      <option name="m_ignoreStaticAccessFromStaticContext" value="false" />
     </inspection_tool>
     <inspection_tool class="UnreachableCodeJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="UnregisteredActivator" enabled="false" level="ERROR" enabled_by_default="false" />
@@ -5320,7 +5637,12 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="UtilityClassWithoutPrivateConstructor" enabled="false" level="WARNING" enabled_by_default="false">
-      <scope name="android" level="WARNING" enabled="false" />
+      <scope name="android" level="WARNING" enabled="false">
+        <option name="ignorableAnnotations">
+          <value />
+        </option>
+        <option name="ignoreClassesWithOnlyMain" value="false" />
+      </scope>
       <option name="ignorableAnnotations">
         <value />
       </option>
