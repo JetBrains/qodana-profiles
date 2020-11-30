@@ -2746,7 +2746,7 @@
     <inspection_tool class="Java8ReplaceMapGet" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="Java9CollectionFactory" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="Java9ModuleExportsPackageToItself" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="Java9RedundantRequiresStatement" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="Java9RedundantRequiresStatement" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="Java9ReflectionClassVisibility" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="Java9UndeclaredServiceUsage" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="JavaCollectionsStaticMethod" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
@@ -3759,7 +3759,7 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="PackageJsonMismatchedDependency" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="PackageName" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+    <inspection_tool class="PackageName" enabled="false" level="WEAK WARNING" enabled_by_default="false">
       <option name="namePattern" value="[a-z_][a-z\d_]*(\.[a-z_][a-zA-Z\d_]*)*" />
     </inspection_tool>
     <inspection_tool class="PackageNamingConvention" enabled="false" level="WARNING" enabled_by_default="false">
@@ -4551,7 +4551,7 @@
       <option name="IGNORE_ALL" value="true" />
     </inspection_tool>
     <inspection_tool class="RedundantSuspendModifier" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="RedundantThrows" enabled="true" level="WARNING" enabled_by_default="true">
+    <inspection_tool class="RedundantThrows" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="RedundantThrowsDeclaration" enabled="false" level="WARNING" enabled_by_default="false">
@@ -4878,10 +4878,10 @@
     <inspection_tool class="SamePackageImport" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="SameParameterValue" enabled="true" level="WARNING" enabled_by_default="true">
+    <inspection_tool class="SameParameterValue" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="SameReturnValue" enabled="true" level="WARNING" enabled_by_default="true">
+    <inspection_tool class="SameReturnValue" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="SameVersion" enabled="true" level="WARNING" enabled_by_default="true">
@@ -5829,7 +5829,7 @@
       <option name="m_ignoreImmediatelyReturnedVariables" value="false" />
       <option name="m_ignoreAnnotatedVariables" value="false" />
     </inspection_tool>
-    <inspection_tool class="UnnecessaryModuleDependencyInspection" enabled="true" level="WARNING" enabled_by_default="true">
+    <inspection_tool class="UnnecessaryModuleDependencyInspection" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="UnnecessaryParentheses" enabled="true" level="INFORMATION" enabled_by_default="true">
@@ -5970,7 +5970,7 @@
     <inspection_tool class="UnusedReceiverParameter" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="UnusedReturnValue" enabled="true" level="WARNING" enabled_by_default="true">
+    <inspection_tool class="UnusedReturnValue" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="UnusedSymbol" enabled="false" level="WARNING" enabled_by_default="false">
@@ -6085,7 +6085,7 @@
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
     <inspection_tool class="WarningOnMainUnusedParameterMigration" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="WeakerAccess" enabled="true" level="WARNING" enabled_by_default="true">
+    <inspection_tool class="WeakerAccess" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false">
         <option name="SUGGEST_PACKAGE_LOCAL_FOR_MEMBERS" value="true" />
         <option name="SUGGEST_PACKAGE_LOCAL_FOR_TOP_CLASSES" value="true" />
