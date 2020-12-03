@@ -2380,10 +2380,10 @@
     <inspection_tool class="PhpDisabledQualityToolComposerInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpDocDuplicateTypeInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpDocFieldTypeMismatchInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="PhpDocMissingReturnTagInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PhpDocMissingReturnTagInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PhpDocMissingThrowsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpDocRedundantThrowsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="PhpDocSignatureInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PhpDocSignatureInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PhpDuplicateArrayKeysInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpDuplicateCaseInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpDuplicateSwitchCaseBodyInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
@@ -2477,7 +2477,7 @@
     <inspection_tool class="PhpUnitMissingTargetForTestInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="PhpUnitTestsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpUnitUndefinedDataProviderInspection" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="PhpUnnecessaryFullyQualifiedNameInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PhpUnnecessaryFullyQualifiedNameInspection" enabled="true" level="WEAK_WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpUnnecessaryLocalVariableInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpUnnecessaryParenthesesInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="PhpUnnecessarySemicolonInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
