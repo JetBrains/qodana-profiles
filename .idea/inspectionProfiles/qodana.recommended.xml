@@ -2520,7 +2520,7 @@
     <inspection_tool class="MessDetectorValidationInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpNamedArgumentMightBeUnresolvedInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpFieldCanBePromotedInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="PhpStaticAsDynamicMethodCallInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PhpStaticAsDynamicMethodCallInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PhpNamedArgumentUsageInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpIncorrectMagicMethodSignatureInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpArgumentWithoutNamedIdentifierInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
@@ -2528,8 +2528,8 @@
     <inspection_tool class="PhpDuplicateMatchArmBodyInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpDuplicateMatchConditionInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpUnusedMatchConditionInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="PhpMissingParentCallMagicInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="PhpMissingParentCallCommonInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PhpMissingParentCallMagicInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PhpMissingParentCallCommonInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PhpSwitchCanBeReplacedWithMatchExpressionInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpGetClassCanBeReplacedWithClassNameLiteralInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpMatchExpressionCanBeReplacedWithTernaryInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
@@ -3103,10 +3103,10 @@
     <inspection_tool class="RegExpEmptyAlternationBranch" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="RegExpEscapedMetaCharacter" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="RegExpOctalEscape" enabled="true" level="INFORMATION" enabled_by_default="true" />
-    <inspection_tool class="RegExpRedundantEscape" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="RegExpRedundantEscape" enabled="true" level="WEAK_WARNING" enabled_by_default="true" />
     <inspection_tool class="RegExpRedundantNestedCharacterClass" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="RegExpRepeatedSpace" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="RegExpSingleCharAlternation" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="RegExpSingleCharAlternation" enabled="true" level="WEAK_WARNING" enabled_by_default="true" />
     <inspection_tool class="RegExpUnexpectedAnchor" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="RegExpUnnecessaryNonCapturingGroup" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="RemoveAtFromAnnotationArgument" enabled="false" level="WARNING" enabled_by_default="false" />
