@@ -2483,7 +2483,7 @@
     <inspection_tool class="PhpUnnecessarySemicolonInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpUnpackedArrayArgumentTypeMismatchInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpUnreachableStatementInspection" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="PhpUnused" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PhpUnused" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PhpUnusedAliasInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpUnusedFieldDefaultValueInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpUnusedLocalVariableInspection" enabled="true" level="WARNING" enabled_by_default="true" />
