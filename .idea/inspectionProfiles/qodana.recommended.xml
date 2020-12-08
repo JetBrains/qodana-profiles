@@ -2215,9 +2215,9 @@
     <inspection_tool class="NullableBooleanElvis" enabled="true" level="INFO" enabled_by_default="true" />
     <inspection_tool class="NullableProblems" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="REPORT_NULLABLE_METHOD_OVERRIDES_NOTNULL" value="true" />
-      <option name="REPORT_NOT_ANNOTATED_METHOD_OVERRIDES_NOTNULL" value="true" />
+      <option name="REPORT_NOT_ANNOTATED_METHOD_OVERRIDES_NOTNULL" value="false" />
       <option name="REPORT_NOTNULL_PARAMETER_OVERRIDES_NULLABLE" value="true" />
-      <option name="REPORT_NOT_ANNOTATED_PARAMETER_OVERRIDES_NOTNULL" value="true" />
+      <option name="REPORT_NOT_ANNOTATED_PARAMETER_OVERRIDES_NOTNULL" value="false" />
       <option name="REPORT_NOT_ANNOTATED_GETTER" value="true" />
       <option name="IGNORE_EXTERNAL_SUPER_NOTNULL" value="true" />
       <option name="REPORT_NOT_ANNOTATED_SETTER_PARAMETER" value="true" />
