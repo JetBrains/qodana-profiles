@@ -2611,6 +2611,7 @@
     <inspection_tool class="JUnitTestNG" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="android" level="WARNING" enabled="false" />
     </inspection_tool>
+    <inspection_tool class="JavaAnnotator" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="Java8CollectionRemoveIf" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="Java8CollectionsApi" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="Java8ListSort" enabled="true" level="INFORMATION" enabled_by_default="true" />
