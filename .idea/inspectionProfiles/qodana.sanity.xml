@@ -12,7 +12,5 @@
         <inspection_tool class="PhpUndefinedCallbackInspection" enabled="true" level="ERROR" enabled_by_default="true" />
         <inspection_tool class="PhpMultipleClassDeclarationsInspection" enabled="true" level="ERROR" enabled_by_default="true" />
         <inspection_tool class="PhpLanguageLevelInspection" enabled="true" level="ERROR" enabled_by_default="true" />
-        <inspection_tool class="UnresolvedReference" enabled="false" level="ERROR" enabled_by_default="false" />
-        <inspection_tool class="SyntaxError" enabled="true" level="ERROR" enabled_by_default="false" />
     </profile>
 </component>
