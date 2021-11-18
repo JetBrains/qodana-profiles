@@ -1,0 +1,368 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Qodana Project Metadata Version 1.0.0 JSON Schema",
+  "$id": "https://raw.githubusercontent.com/JetBrains/qodana-profiles/master/schemas/qodana-project-metadata-1.0.0.json",
+  "description": "A standard Qodana format for project components description (licenses, dependencies, vulnerabilities).",
+  "additionalProperties": false,
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "description": "The URI of the JSON schema corresponding to the version.",
+      "type": "string",
+      "format": "uri"
+    },
+    "version": {
+      "description": "The projectMetadata format version of this log file.",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "paths": {
+      "description": "The list of paths to the project components.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "modules": {
+      "description": "The list of modules of the project.",
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "#/definitions/module"
+      }
+    },
+    "licenses": {
+      "description": "The list of licenses of the project.",
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "#/definitions/license"
+      }
+    },
+    "dependencies": {
+      "description": "The list of dependencies of the project.",
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "#/definitions/dependency"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "paths",
+    "modules",
+    "licenses",
+    "dependencies"
+  ],
+  "definitions": {
+    "module": {
+      "description": "A simple representation of a module: not all project/ecosystems contain a lot of modules, that is why the current module definition is short.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the module.",
+          "type": "string"
+        },
+        "path": {
+          "description": "The path to the module (relative to the project root).",
+          "type": "string"
+        }
+      }
+    },
+    "dependency": {
+      "description": "A representation of a dependency",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The unique identifier of the dependency.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The human-readable name of the dependency.",
+          "type": "string"
+        },
+        "version": {
+          "description": "The version of the dependency.",
+          "type": "string"
+        },
+        "module": {
+          "description": "The module name that contains the dependency.",
+          "type": "string"
+        },
+        "paths": {
+          "description": "The list of paths to the dependency.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "type": {
+          "description": "The type of the dependency.",
+          "enum": [
+            "Maven",
+            "Java",
+            "Composer",
+            "PyPi",
+            "Conda",
+            "npm",
+            "Golang",
+            "Unknown",
+            "NuGet"
+          ]
+        },
+        "homepageUrl": {
+          "description": "The homepage URL of the dependency.",
+          "type": "string"
+        },
+        "licenses": {
+          "description": "The list of licenses of the dependency.",
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "$ref": "#/definitions/license"
+          }
+        },
+        "vulnerabilities": {
+          "description": "The list of vulnerabilities of the dependency.",
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "$ref": "#/definitions/vulnerability"
+          }
+        }
+      }
+    },
+    "license": {
+      "description": "A representation of a license",
+      "type": "object",
+      "properties": {
+        "key": {
+          "description": "The license key.",
+          "type": "string",
+          "examples": [
+            "MIT",
+            "NONE",
+            "Apache-2.0"
+          ]
+        },
+        "name": {
+          "description": "The human-readable name of the license.",
+          "type": [
+            "null",
+            "string"
+          ],
+          "examples": [
+            "MIT",
+            null,
+            "Apache License 2.0"
+          ]
+        },
+        "confidence": {
+          "description": "The confidence of the license detected (if it was detected with DSC).",
+          "type": [
+            "null",
+            "number"
+          ]
+        },
+        "category": {
+          "description": "The category of the license.",
+          "type": [
+            "null",
+            "string"
+          ],
+          "examples": [
+            null,
+            "Permissive"
+          ]
+        },
+        "path": {
+          "description": "The path to the license file.",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "text": {
+          "description": "The original text of the license, e.g. Apache-2.0 license text with added emails/dates/etc.",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "description": {
+          "description": "The description of the license.",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "homepageUrl": {
+          "description": "The homepage URL of the license.",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "spdxUrl": {
+          "description": "The SPDX URL of the license.",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "implementation": {
+          "description": "The implementation of the license: description on how to license anything with the license.",
+          "type": [
+            "null",
+            "string"
+          ],
+          "examples": [
+            null,
+            "Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file."
+          ]
+        },
+        "isDeprecated": {
+          "description": "Whether the license is deprecated.",
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        "permissions": {
+          "description": "The permissions of the license.",
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "conditions": {
+          "description": "The conditions of the license.",
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "limitations": {
+          "description": "The limitations of the license.",
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "referenceText": {
+          "description": "The reference text of the license, e.g. original Apache-2.0 text.",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "tags": {
+          "description": "The list of license tags.",
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {
+            "$ref": "#/definitions/LicenseTag"
+          }
+        }
+      }
+    },
+    "LicenseTag": {
+      "description": "A representation of a license tag (problem type) – indicates possible problems found in the license used in the project, helpful for Qodana UI to display it in Project audit tab.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "Tag type",
+          "enum": [
+            "Uncategorized",
+            "None",
+            "Unknown",
+            "Prohibited"
+          ]
+        },
+        "comment": {
+          "description": "Comment to tag",
+          "type": "string"
+        }
+      }
+    },
+    "vulnerability": {
+      "description": "A representation of a dependency vulnerability.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The unique identifier of the vulnerability.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name of the vulnerability.",
+          "type": "string"
+        },
+        "description": {
+          "description": "The description of the vulnerability.",
+          "type": "string"
+        },
+        "severity": {
+          "description": "The severity of the vulnerability.",
+          "type": "string"
+        },
+        "cve": {
+          "description": "The CVE identifier of the vulnerability.",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "cvssScore": {
+          "description": "The CVSS score of the vulnerability.",
+          "type": [
+            "null",
+            "number"
+          ]
+        },
+        "cvssVector": {
+          "description": "The CVSS vector of the vulnerability.",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "cvssVectorUrl": {
+          "description": "The CVSS vector URL of the vulnerability.",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "cwe": {
+          "description": "The CWE identifier of the vulnerability.",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "cweUrl": {
+          "description": "The CWE URL of the vulnerability.",
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    }
+  }
+}

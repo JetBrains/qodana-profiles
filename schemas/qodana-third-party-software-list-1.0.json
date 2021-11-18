@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Qodana Third-Party Software List Version 1.0.0 JSON Schema",
+  "$id": "https://raw.githubusercontent.com/JetBrains/qodana-profiles/master/schemas/qodana-third-party-software-list-1.0.0.json",
+  "description": "A standard Qodana format for third-party software list export in JSON.",
+  "additionalProperties": false,
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "description": "The URI of the JSON schema corresponding to the version.",
+      "type": "string",
+      "format": "uri"
+    },
+    "version": {
+      "description": "The thirdPartySoftwareList format version of this log file.",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "dependencies": {
+      "description": "The list of used third-party software.",
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "$ref": "#/definitions/dependency"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "dependencies"
+  ],
+  "definitions": {
+    "dependency": {
+      "description": "A representation of a dependency in thirdPartySoftwareList",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The human-readable name of the dependency.",
+          "type": "string"
+        },
+        "version": {
+          "description": "The version of the dependency.",
+          "type": "string"
+        },
+        "url": {
+          "description": "The homepage URL of the dependency.",
+          "type": "string"
+        },
+        "licenses": {
+          "description": "The list of licenses of the dependency.",
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "$ref": "#/definitions/license"
+          }
+        }
+      },
+      "required": ["name", "version", "url", "licenses"]
+    },
+    "license": {
+      "description": "A representation of a license in thirdPartySoftwareList",
+      "type": "object",
+      "properties": {
+        "licenseId": {
+          "description": "The license ID (key).",
+          "type": "string",
+          "examples": [
+            "MIT",
+            "NONE",
+            "Apache-2.0"
+          ]
+        },
+        "licenseUrl": {
+          "description": "The homepage URL of the license.",
+          "type": "string"
+        }
+      },
+      "required": ["licenseId", "licenseUrl"]
+    }
+  }
+}
