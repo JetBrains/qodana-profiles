@@ -133,6 +133,14 @@
           "items": {
             "$ref": "#/definitions/vulnerability"
           }
+        },
+        "dependencies": {
+          "description": "The list of dependencies of the dependency.",
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "$ref": "#/definitions/dependency"
+          }
         }
       }
     },
