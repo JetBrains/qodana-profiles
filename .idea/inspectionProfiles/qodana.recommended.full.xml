@@ -1934,7 +1934,6 @@
     <inspection_tool class="JspUnescapedEl" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="Junit4Converter" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="Junit5MalformedParameterized" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="JupyterKernelInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JupyterPackageInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="KDocMissingDocumentation" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="KDocUnresolvedReference" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -2843,6 +2842,7 @@
     <inspection_tool class="PyCallingNonCallableInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyChainedComparisonsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PyClassHasNoInitInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyClassVarInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyClassicStyleClassInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PyComparisonWithNoneInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PyCompatibilityInspection" enabled="false" level="WARNING" enabled_by_default="false" />
