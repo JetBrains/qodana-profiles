@@ -544,7 +544,7 @@
     <inspection_tool class="BigDecimalMethodWithoutRoundingCalled" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="BindingAnnotationWithoutInject" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="BintrayPublishingPlugin" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="BladeUnpairedParenthesesInStringLiteral" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="BladeUnpairedParenthesesInStringLiteral" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="BlockMarkerComments" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="BlockStatementJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="BlockingMethodInNonBlockingContext" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -2650,7 +2650,7 @@
     <inspection_tool class="PhpInconsistentReturnPointsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PhpIncorrectMagicMethodSignatureInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="PhpInstanceofIsAlwaysTrueInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="PhpIntRangesMismatchInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PhpIntRangesMismatchInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpInternalEntityUsedInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpInvalidInstanceofInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PhpInvalidMagicMethodModifiersInspection" enabled="true" level="WARNING" enabled_by_default="true" />
