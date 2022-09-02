@@ -42,6 +42,7 @@ See validate.sh.
     <xs:attribute name="enabled" type="xs:boolean" use="required" />
     <xs:attribute name="level" type="InspectionLevel" use="required" />
     <xs:attribute name="enabled_by_default" type="xs:boolean" use="required" />
+    <xs:attribute name="checkParameterExcludingHierarchy" type="xs:boolean" />
   </xs:complexType>
 
   <xs:simpleType name="InspectionLevel">
@@ -66,6 +67,7 @@ See validate.sh.
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="Options" type="InspectionOptionValueOptions" minOccurs="0" maxOccurs="1" />
     </xs:sequence>
     <xs:attribute name="name" type="xs:string" use="required" />
     <xs:attribute name="value" type="xs:string" />
@@ -76,6 +78,12 @@ See validate.sh.
       <xs:element name="item" type="InspectionOptionValueListItem" minOccurs="0" maxOccurs="unbounded" />
     </xs:sequence>
     <xs:attribute name="size" type="xs:int" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="InspectionOptionValueOptions">
+    <xs:sequence>
+      <xs:element name="option" type="InspectionOption" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="InspectionOptionValue">
