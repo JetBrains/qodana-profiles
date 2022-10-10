@@ -6,5 +6,6 @@
         <inspection_tool class="PhpLanguageLevelInspection" enabled="true" level="ERROR" enabled_by_default="true" />
         <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="ERROR" enabled_by_default="true" />
         <inspection_tool class="PyInterpreterInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+        <inspection_tool class="RiderCompilationErrors" enabled="true" level="ERROR" enabled_by_default="true" />
     </profile>
 </component>
