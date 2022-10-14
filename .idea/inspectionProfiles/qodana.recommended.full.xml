@@ -4204,11 +4204,11 @@
     <!-- GROUP: Redundancies in Symbol Declarations -->
     <inspection_tool class="UnusedMember.Global" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <!-- GROUP: Spelling issues -->
-    <inspection_tool class="CommentTypo" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="IdentifierTypo" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="MarkupAttributeTypo" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="MarkupTextTypo" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="StringLiteralTypo" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="CommentTypo" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="IdentifierTypo" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="MarkupAttributeTypo" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="MarkupTextTypo" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="StringLiteralTypo" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
 
     <!-- LANG: ASXX -->
     <!-- GROUP: Potential Code Quality Issues -->
@@ -6712,7 +6712,7 @@
 
     <!-- LANG: RESX -->
     <!-- GROUP: Potential Code Quality Issues -->
-    <inspection_tool class="DuplicateResource" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="DuplicateResource" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="OverriddenWithEmptyValue" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="NotOverriddenInSpecificCulture" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="NotDeclaredInParentCulture" enabled="true" level="WARNING" enabled_by_default="true" />
