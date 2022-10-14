@@ -5811,7 +5811,7 @@
     <inspection_tool class="UseThrowIfNullMethod" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="SimplifyLinqExpressionUseMinByAndMaxBy" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="MemberCanBePrivate.Local" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="MemberCanBePrivate.Global" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="MemberCanBePrivate.Global" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="MemberCanBeProtected.Local" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="MemberCanBeProtected.Global" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="MemberCanBeInternal" enabled="false" level="INFORMATION" enabled_by_default="false" />
@@ -6336,7 +6336,7 @@
     <inspection_tool class="RequiredBaseTypesDirectConflict" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="RequiredBaseTypesConflict" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ContractAnnotationNotParsed" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="InconsistentNaming" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="InconsistentNaming" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="CheckNamespace" enabled="true" level="WARNING" enabled_by_default="true" />
     <!-- GROUP: Unreal Build System -->
     <inspection_tool class="CSharpBuildCSInvalidModuleName" enabled="true" level="WARNING" enabled_by_default="true" />
