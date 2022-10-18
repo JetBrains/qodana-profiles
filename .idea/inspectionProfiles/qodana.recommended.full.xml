@@ -5698,7 +5698,7 @@
     <inspection_tool class="CppUE4CodingStandardNamingViolationWarning" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="CppUE4CodingStandardUClassNamingViolationError" enabled="true" level="ERROR" enabled_by_default="true" />
     <!-- GROUP: Constraints Violations -->
-    <inspection_tool class="CppInconsistentNaming" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="CppInconsistentNaming" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <!-- GROUP: Syntax Style -->
     <inspection_tool class="CppRemoveRedundantBraces" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="CppEnforceIfStatementBraces" enabled="false" level="INFORMATION" enabled_by_default="false" />
@@ -5813,7 +5813,7 @@
     <inspection_tool class="MemberCanBeProtected.Local" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="MemberCanBeProtected.Global" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="MemberCanBeInternal" enabled="false" level="INFORMATION" enabled_by_default="false" />
-    <inspection_tool class="MemberCanBeMadeStatic.Local" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="MemberCanBeMadeStatic.Local" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="MemberCanBeMadeStatic.Global" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="LocalFunctionCanBeMadeStatic" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="ClassCanBeSealed.Local" enabled="false" level="INFORMATION" enabled_by_default="false" />
@@ -5827,7 +5827,7 @@
     <inspection_tool class="PropertyCanBeMadeInitOnly.Local" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PropertyCanBeMadeInitOnly.Global" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="UnassignedGetOnlyAutoProperty" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="ConvertToConstant.Local" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="ConvertToConstant.Local" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="ConvertToConstant.Global" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="SuggestBaseTypeForParameter" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="SuggestBaseTypeForParameterInConstructor" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
