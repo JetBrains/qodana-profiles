@@ -5818,7 +5818,7 @@
     <inspection_tool class="LocalFunctionCanBeMadeStatic" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="ClassCanBeSealed.Local" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="ClassCanBeSealed.Global" enabled="false" level="INFORMATION" enabled_by_default="false" />
-    <inspection_tool class="FieldCanBeMadeReadOnly.Local" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="FieldCanBeMadeReadOnly.Local" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="FieldCanBeMadeReadOnly.Global" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="StructMemberCanBeMadeReadOnly" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="StructCanBeMadeReadOnly" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
