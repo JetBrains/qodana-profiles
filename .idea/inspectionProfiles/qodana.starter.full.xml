@@ -4162,7 +4162,7 @@
     </inspection_tool>
     <!-- RIDER -->
     <inspection_tool class="RiderGlobalInspection" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="RoslynAnalyzersOutputInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="RoslynAnalyzersOutputInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RiderCompilationErrorsInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="RiderSecurityErrorsInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <!-- LANG: Angular2HTML -->
