@@ -4163,7 +4163,7 @@
     <inspection_tool class="RiderGlobalInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="RoslynAnalyzersOutputInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="RiderCompilationErrorsInspection" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="RiderSecurityErrorsInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="RiderSecurityErrorsInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <!-- LANG: Angular2HTML -->
     <!-- GROUP: Potential Code Quality Issues -->
     <inspection_tool class="AngularHtml.Banana" enabled="true" level="WARNING" enabled_by_default="true" />
