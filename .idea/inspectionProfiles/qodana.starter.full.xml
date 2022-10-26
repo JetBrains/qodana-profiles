@@ -3294,12 +3294,12 @@
     <inspection_tool class="ReplaceToWithInfixForm" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="ReplaceWithEnumMap" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ReplaceWithIgnoreCaseEquals" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <!--
-      Enabled in IDEA but disabled in Qodana, as this was originally an intention. It was converted to an inspection
-      in order to provide the "fix all" action, which is not available for intentions. The rate of false positives is
-      too high to be useful as an inspection.
-    -->
     <inspection_tool class="ReplaceWithImportAlias" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <!--
+      ReplaceWithJavadoc is enabled in IDEA but disabled in Qodana, as this was originally an intention.
+      It was converted to an inspection to provide the "Fix all" action, which is not available for intentions.
+      The rate of false positives is too high to be useful as an inspection.
+    -->
     <inspection_tool class="ReplaceWithJavadoc" enabled="false" level="INFORMATION" enabled_by_default="false" />
     <inspection_tool class="ReplaceWithOperatorAssignment" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="RequiredArtifactTypeInspection" enabled="false" level="ERROR" enabled_by_default="false" />
