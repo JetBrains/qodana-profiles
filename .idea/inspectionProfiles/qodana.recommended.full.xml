@@ -489,10 +489,10 @@
     <inspection_tool class="AntDuplicateTargetsInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="AntMissingPropertiesFileInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="AntResolveInspection" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="AppEngineDeprecatedRuntimeInspection" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="AppEngineForbiddenCode" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="AppEngineThreadsafeCGIHandlerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="AppEngineThreadsafeInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AppEngineDeprecatedRuntimeInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AppEngineForbiddenCode" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AppEngineThreadsafeCGIHandlerInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AppEngineThreadsafeInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ArchaicSystemPropertyAccess" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ArgNamesErrorsInspection" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="ArgNamesWarningsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -3139,9 +3139,9 @@
     <inspection_tool class="QsProperties" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="QsUndeclaredPathMimeTypesInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="QsYaml" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="Query_bound_parameters" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="Query_index_required" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="Query_restricted" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Query_bound_parameters" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="Query_index_required" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="Query_restricted" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="QuestionableName" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="nameString" value="aa,abc,bad,bar,bar2,baz,baz1,baz2,baz3,bb,blah,bogus,bool,cc,dd,defau1t,dummy,dummy2,ee,fa1se,ff,foo,foo1,foo2,foo3,foobar,four,fred,fred1,fred2,gg,hh,hello,hello1,hello2,hello3,ii,nu11,one,silly,silly2,string,two,that,then,three,whi1e,var" />
     </inspection_tool>
@@ -3363,7 +3363,7 @@
     <inspection_tool class="RestResourceMethodInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="RestWrongDefaultValueInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="RestrictReturnStatementTargetMigration" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="Restricted_Python_calls" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Restricted_Python_calls" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ResultOfObjectAllocationIgnored" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ResultSetIndexZero" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ReturnFromFinallyBlock" enabled="true" level="WARNING" enabled_by_default="true" />
