@@ -3161,7 +3161,7 @@
           }
         },
   
-        "required": [ "name", "fullName", "version" ]
+        "required": [ "name", "version" ]
       },
   
       "toolComponentReference": {
