@@ -1,0 +1,69 @@
+name: "Qodana recommended profile"
+
+groups:
+  - groupId: IncludedPaths # Qodana can run any inspections, but these groups are tested and monitored by Qodana team
+    groups:
+      - "ijpath:Java"
+      - "ijpath:Kotlin"
+      - "ijpath:JVM languages"
+      - "ijpath:Spring"
+      - "ijpath:CDI (Contexts and Dependency Injection)"
+      - "ijpath:Bean Validation"
+      - "ijpath:Reactive Streams"
+      - "ijpath:RegExp"
+      - "ijpath:PHP"
+      - "ijpath:JavaScript and TypeScript"
+      - "ijpath:Vue"
+      - "ijpath:General"
+      - "ijpath:TOML"
+      - "ijpath:Structural search"
+
+  - groupId: Excluded
+    groups:
+      - "ALL"
+      - "!IncludedPaths"
+      - "ijpath:Java/Java language level migration aids" # Qodana doesn't run migration aids inspections except were asked explicitly, due to possible problems spam
+      - "GLOBAL" # Qodana doesn't run global inspections by default, due to significant time consumption
+      - "ijseverity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
+      - "ijseverity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
+      - "ExcludedInspections"
+
+  - groupId: ExcludedInspections # list of inspections disabled by specific reason
+    inspections:
+      - Annotator # substituted by JavaAnnotator in sanity
+      - KotlinAnnotator # works in "sanity" inspections
+      - JavaAnnotator # works in "sanity" inspections
+      - SyntaxError # should work on sanity level
+      - RedundantSuppression # not a problem actually
+      - Since15 #Detects wrong language level. Should work on sanity.
+      - JavadocBlankLines # Questionable. Spam on mockito, RxJava and other projects.
+
+      #JS
+      - JSAnnotator # should work on sanity level
+      - JSTestFailedLine # Not an inspections
+
+      #PHP
+      - PhpLanguageLevelInspection #sanity
+
+      #Python
+      - PyInterpreterInspection # Sanity
+      - PyUnresolvedReferencesInspection # Sanity
+
+
+inspections:
+  - group: Excluded
+    enabled: false
+  - group: ALL
+    ignore:
+      - "file:vendor/*"
+      - "file:build/*"
+      - "file:builds/*"
+      - "file:dist/*"
+      - "file:tests/*"
+      - "file:tools/*"
+      - "file:vendor/*"
+      - "test:*..*"
+      - "file:buildSrc/*"
+      - "file[*.buildSrc]:*/"
+  - inspection: JavadocReference
+    severity: WARNING # It has default ERROR severity. It's understandable for unresolved references in javadocs for editor but not on server.
