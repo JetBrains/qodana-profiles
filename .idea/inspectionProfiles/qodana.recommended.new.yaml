@@ -55,15 +55,15 @@ inspections:
     enabled: false
   - group: ALL
     ignore:
-      - "file:vendor/*"
-      - "file:build/*"
-      - "file:builds/*"
-      - "file:dist/*"
-      - "file:tests/*"
-      - "file:tools/*"
-      - "file:vendor/*"
-      - "test:*..*"
-      - "file:buildSrc/*"
-      - "file[*.buildSrc]:*/"
+      - "vendor/**"
+      - "build/**"
+      - "builds/**"
+      - "dist/**"
+      - "tests/**"
+      - "tools/**"
+      - "vendor/**"
+      - "ijscope:test:*..*"
+      - "ijscope:file:buildSrc/*"
+      - "ijscope:file[*.buildSrc]:*/"
   - inspection: JavadocReference
     severity: WARNING # It has default ERROR severity. It's understandable for unresolved references in javadocs for editor but not on server.
