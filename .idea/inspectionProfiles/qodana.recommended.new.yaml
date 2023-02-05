@@ -57,6 +57,7 @@ inspections:
     ignore:
       - "vendor/**"
       - "build/**"
+      - "buildSrc/**"
       - "builds/**"
       - "dist/**"
       - "tests/**"
