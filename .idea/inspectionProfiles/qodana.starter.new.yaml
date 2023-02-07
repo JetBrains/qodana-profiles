@@ -1,6 +1,7 @@
 name: "Qodana starter profile"
 
-include: "qodana.recommended.new.yaml"
+include:
+  - "qodana.recommended.new.yaml"
 
 groups:
   - groupId: StarterExcluded # qodana.starter make less checks than qodana.recommended to not overwhelm user
