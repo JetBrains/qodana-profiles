@@ -43,7 +43,8 @@ groups:
   - groupId: StarterExcludedInspections
     inspections:
       #General
-      - InjectedReferences # Performance and spam
+      - InjectedReferences # Heavy and spam
+      - DuplicatedCode # Heavy and spam
 
       #RegExp
       - RegExpSimplifiable # Mostly style problems
@@ -57,7 +58,18 @@ groups:
       - ConditionalCanBePushedInsideExpression # Style
       - SwitchExpressionCanBePushedDown # Style
       - ReuseOfLocalVariable # Style
-      - Deprecation # possible problems spam
+      - Deprecation # Possible spam
+      - UNCHECKED_WARNING # Possible spam
+      - RedundantIf # Style
+      - UnnecessaryLocalVariable # Style
+      - UnnecessaryUnicodeEscape # Style
+      - IOStreamConstructor # Depends on language level detection - possible spam
+      - ArraysAsListWithZeroOrOneArgument # Style
+      - RedundantMethodOverride # Spam
+      - UNUSED_IMPORT # Spam and not a warning in IDE
+
+      #Kotlin
+      - KotlinDeprecation # Possible spam
 
       #PHP
       - PhpDynamicFieldDeclarationInspection
