@@ -3,29 +3,29 @@ name: "Qodana recommended profile"
 groups:
   - groupId: IncludedPaths # Qodana can run any inspections, but these groups are tested and monitored by Qodana team
     groups:
-      - "ijpath:Java"
-      - "ijpath:Kotlin"
-      - "ijpath:JVM languages"
-      - "ijpath:Spring"
-      - "ijpath:CDI (Contexts and Dependency Injection)"
-      - "ijpath:Bean Validation"
-      - "ijpath:Reactive Streams"
-      - "ijpath:RegExp"
-      - "ijpath:PHP"
-      - "ijpath:JavaScript and TypeScript"
-      - "ijpath:Vue"
-      - "ijpath:General"
-      - "ijpath:TOML"
-      - "ijpath:Structural search"
+      - "category:Java"
+      - "category:Kotlin"
+      - "category:JVM languages"
+      - "category:Spring"
+      - "category:CDI (Contexts and Dependency Injection)"
+      - "category:Bean Validation"
+      - "category:Reactive Streams"
+      - "category:RegExp"
+      - "category:PHP"
+      - "category:JavaScript and TypeScript"
+      - "category:Vue"
+      - "category:General"
+      - "category:TOML"
+      - "category:Structural search"
 
   - groupId: Excluded
     groups:
       - "ALL"
       - "!IncludedPaths"
-      - "ijpath:Java/Java language level migration aids" # Qodana doesn't run migration aids inspections except were asked explicitly, due to possible problems spam
+      - "category:Java/Java language level migration aids" # Qodana doesn't run migration aids inspections except were asked explicitly, due to possible problems spam
       - "GLOBAL" # Qodana doesn't run global inspections by default, due to significant time consumption
-      - "ijseverity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
-      - "ijseverity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
+      - "severity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
+      - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
       - "ExcludedInspections"
 
   - groupId: ExcludedInspections # list of inspections disabled by specific reason
@@ -63,8 +63,8 @@ inspections:
       - "tests/**"
       - "tools/**"
       - "vendor/**"
-      - "ijscope:test:*..*"
-      - "ijscope:file:buildSrc/*"
-      - "ijscope:file[*.buildSrc]:*/"
+      - "scope#test:*..*"
+      - "scope#file:buildSrc/*"
+      - "scope#file[*.buildSrc]:*/"
   - inspection: JavadocReference
     severity: WARNING # It has default ERROR severity. It's understandable for unresolved references in javadocs for editor but not on server.
