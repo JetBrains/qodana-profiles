@@ -44,6 +44,8 @@ groups:
 
       #PHP
       - PhpLanguageLevelInspection #sanity
+      # Single problem - multiple occurences. Spam. Should be aggregated to problem with multiple locations.
+      - PhpMultipleClassDeclarationsInspection
 
       #Python
       - PyInterpreterInspection # Sanity
@@ -67,4 +69,4 @@ inspections:
       - "scope#file:buildSrc/*"
       - "scope#file[*.buildSrc]:*/"
   - inspection: JavadocReference
-    severity: WARNING # It has default ERROR severity. It's understandable for unresolved references in javadocs for editor but not on server.
+    severity: WARNING # It has default ERROR severity. It's understandable for unresolved references in javadocs for editor but not on CI.

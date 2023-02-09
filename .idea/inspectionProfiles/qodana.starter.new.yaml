@@ -25,6 +25,7 @@ groups:
       #PHP
       - "category:PHP/Code smell" # Style
       - "category:PHP/Control flow" # Style
+      - "category:PHP/Code style" # Style
       - "category:PHP/PHPDoc" # Starter is concentrated on "executed" source code
       - "category:PHP/Behat" # Starter is concentrated on "executed" source code
       - "category:PHP/Composer" # Starter is concentrated on "executed" source code
@@ -67,6 +68,8 @@ groups:
       - ArraysAsListWithZeroOrOneArgument # Style
       - RedundantMethodOverride # Spam
       - UNUSED_IMPORT # Spam and not a warning in IDE
+      - SwitchStatementWithTooFewBranches # Style
+      - TrivialIf # Style
 
       #Kotlin
       - KotlinDeprecation # Possible spam
@@ -82,6 +85,10 @@ groups:
       - PhpMissingFieldTypeInspection
       - PhpRedundantIntersectionTypeInspection
       - PhpRedundantTypeInUnionTypeInspection
+
+      - PhpMissingParamTypeInspection # Spam
+      - PhpMissingReturnTypeInspection # Spam
+      - PhpUnhandledExceptionInspection # Spam
 
       #PHP/General
       - PhpCurlyBraceAccessSyntaxUsageInspection
