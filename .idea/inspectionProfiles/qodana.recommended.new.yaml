@@ -15,6 +15,7 @@ groups:
       - "category:JavaScript and TypeScript"
       - "category:Vue"
       - "category:Go"
+      - "category:Python"
       - "category:General"
       - "category:TOML"
       - "category:Structural search"
