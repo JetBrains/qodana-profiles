@@ -106,6 +106,12 @@ groups:
       - PhpLineCommentWillBeParsedAsAttributeInspection
       - PhpRedundantAttributeParenthesisInspection
 
+      #JS
+      - UnnecessaryLocalVariableJS # Style
+      - TrivialIfJS # Style
+      - TrivialConditionalJS # Style
+      - UnnecessaryLocalVariableJS # Style
+
 inspections:
   - group: StarterExcluded
     enabled: false

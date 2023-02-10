@@ -23,7 +23,8 @@ groups:
     groups:
       - "ALL"
       - "!IncludedPaths"
-      - "category:Java/Java language level migration aids" # Qodana doesn't run migration aids inspections except were asked explicitly, due to possible problems spam
+      - "category:Java/Java language level migration aids" # Migration aids - only on explicit request, due to possible spam
+      - "category:JavaScript and TypeScript/ES2015 migration aids" # Migration aids - only on explicit request, due to possible spam
       - "GLOBAL" # Qodana doesn't run global inspections by default, due to significant time consumption
       - "severity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
       - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
@@ -41,7 +42,11 @@ groups:
 
       #JS
       - JSAnnotator # should work on sanity level
+      - JSUnresolvedReference # should work on sanity level
+      - NpmUsedModulesInstalled # should work on sanity level
+      - PackageJsonMismatchedDependency # should work on sanity level
       - JSTestFailedLine # Not an inspections
+      - JSUnusedGlobalSymbols #Spam
 
       #PHP
       - PhpLanguageLevelInspection #sanity
@@ -66,6 +71,7 @@ inspections:
       - "tests/**"
       - "tools/**"
       - "vendor/**"
+      - "**.test.ts"
       - "scope#test:*..*"
       - "scope#file:buildSrc/*"
       - "scope#file[*.buildSrc]:*/"
