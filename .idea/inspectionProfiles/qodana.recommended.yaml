@@ -21,12 +21,31 @@ groups:
       - "category:TOML"
       - "category:Structural search"
 
+      # qodana4net inspections
+      - "category:C#"
+      - "category:C++"
+      - "category:VB.NET"
+      - "category:F#"
+      - "category:Angular 2 HTML"
+      - "category:T4"
+      - "category:HTML"
+      - "category:XAML"
+      - "category:Blazor"
+      - "category:ASP.NET route templates"
+      - "category:Razor"
+      - "category:Aspx"
+      - "category:ResX"
+      - "category:Web.Config"
+      - "category:HttpHandler or WebService"
+      - "category:RegExpBase"
+
   - groupId: Excluded
     groups:
       - "ALL"
       - "!IncludedPaths"
       - "category:Java/Java language level migration aids" # Migration aids - only on explicit request, due to possible spam
       - "category:JavaScript and TypeScript/ES2015 migration aids" # Migration aids - only on explicit request, due to possible spam
+      - "category:Roslyn/General" # Exclude Roslyn checks, since they are flaky now
       - "GLOBAL" # Qodana doesn't run global inspections by default, due to significant time consumption
       - "severity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
       - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
