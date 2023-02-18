@@ -1,7 +1,7 @@
 name: "qodana.starter"
 
 include:
-  - "qodana.recommended.new.yaml"
+  - "qodana.recommended.yaml"
 
 groups:
   - groupId: StarterExcluded # qodana.starter make less checks than qodana.recommended to not overwhelm user
