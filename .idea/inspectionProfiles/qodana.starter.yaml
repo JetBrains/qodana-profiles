@@ -1,4 +1,4 @@
-name: "Qodana starter profile"
+name: "qodana.starter"
 
 include:
   - "qodana.recommended.new.yaml"

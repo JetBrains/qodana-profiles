@@ -1,4 +1,4 @@
-name: "Qodana recommended profile"
+name: "qodana.recommended"
 
 groups:
   - groupId: IncludedPaths # Qodana can run any inspections, but these groups are tested and monitored by Qodana team
