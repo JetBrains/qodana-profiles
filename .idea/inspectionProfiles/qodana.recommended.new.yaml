@@ -73,6 +73,7 @@ inspections:
       - "tools/**"
       - "vendor/**"
       - "**.test.ts"
+      - "scope#$gitignore" # $gitignore scope available only in qodana execution
       - "scope#test:*..*"
       - "scope#file:buildSrc/*"
       - "scope#file[*.buildSrc]:*/"
