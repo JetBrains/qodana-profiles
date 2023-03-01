@@ -19,7 +19,6 @@ groups:
       - "category:Python"
       - "category:General"
       - "category:TOML"
-      - "category:Structural search"
 
       # qodana4net inspections
       - "category:C#"
@@ -28,7 +27,6 @@ groups:
       - "category:F#"
       - "category:Angular 2 HTML"
       - "category:T4"
-      - "category:HTML"
       - "category:XAML"
       - "category:Blazor"
       - "category:ASP.NET route templates"
