@@ -94,6 +94,5 @@ inspections:
       - "scope#$gitignore" # $gitignore scope available only in qodana execution
       - "scope#test:*..*"
       - "scope#file:buildSrc/*"
-      - "scope#file[*.buildSrc]:*/"
   - inspection: JavadocReference
     severity: WARNING # It has default ERROR severity. It's understandable for unresolved references in javadocs for editor but not on CI.
