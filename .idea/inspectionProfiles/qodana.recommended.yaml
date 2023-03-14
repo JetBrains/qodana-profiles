@@ -44,6 +44,7 @@ groups:
       - "category:Java/Java language level migration aids" # Migration aids - only on explicit request, due to possible spam
       - "category:JavaScript and TypeScript/ES2015 migration aids" # Migration aids - only on explicit request, due to possible spam
       - "category:Roslyn/General" # Exclude Roslyn checks, since they are flaky now
+      - "category:C#/Spelling Issues" # Flaky spelling inspections
       - "GLOBAL" # Qodana doesn't run global inspections by default, due to significant time consumption
       - "severity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
       - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
@@ -75,6 +76,12 @@ groups:
       #Python
       - PyInterpreterInspection # Sanity
       - PyUnresolvedReferencesInspection # Sanity
+
+      #.NET
+      - InconsistentNaming # Flaky
+
+      #C++
+      - CppInconsistentNaming # Flaky
 
 
 inspections:
