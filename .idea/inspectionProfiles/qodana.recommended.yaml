@@ -1,3 +1,4 @@
+baseProfile: "Project Default"
 name: "qodana.recommended"
 
 groups:
