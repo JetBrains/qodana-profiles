@@ -9,7 +9,6 @@ on:
   with:
     sarif_file: ${{ runner.temp }}/qodana/results/qodana.sarif.json
       - 'releases/*'
-
 jobs:
   qodana:
     runs-on: ubuntu-latest
