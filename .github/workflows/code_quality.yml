@@ -1,7 +1,6 @@
 name: Qodana
 on:
   workflow_dispatch:
-  pull_request:
       - main
       uses: github/codeql-action/upload-sarif@v2
   with:
