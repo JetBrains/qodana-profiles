@@ -16,6 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0
-      - name: 'Qodana Scan'
+          fetch-depth: 
+          
+  name: 'Qodana Scan'
+  uses: JetBrains/qodana-action@main
+  env:
+    QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+  env:
+    QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
         uses: JetBrains/qodana-action@v2022.3.4
