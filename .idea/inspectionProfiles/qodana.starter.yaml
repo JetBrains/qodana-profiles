@@ -12,6 +12,10 @@ groups:
       - "category:Kotlin/Naming conventions" # Style issues
       - "category:Kotlin/Style issues" # Style issues
 
+      #Ktor
+      - "category:Ktor/General" # Not relevant for Qodana analysis
+      - "category:Ktor/Qodana support" # Long running checks that not everyone needs
+
       #Java
       - "category:Java/Verbose or redundant code constructs" # Style issues
       - "category:Java/Probable bugs/Nullability problems" # Nullability checks could spam
