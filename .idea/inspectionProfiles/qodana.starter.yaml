@@ -13,7 +13,6 @@ groups:
       - "category:Kotlin/Style issues" # Style issues
 
       #Ktor
-      - "category:Ktor/General" # Not relevant for Qodana analysis
       - "category:Ktor/Qodana support" # Long running checks that not everyone needs
 
       #Java
