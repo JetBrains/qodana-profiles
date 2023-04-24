@@ -119,3 +119,5 @@ groups:
 inspections:
   - group: StarterExcluded
     enabled: false
+  - inspection: KtorOpenAPIUpdate
+    enabled: false
