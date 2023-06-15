@@ -8,9 +8,8 @@ Code inspection profiles that are included in each Qodana Docker image. Publishe
 
 ## Project structure
 
-Each major release of Qodana Docker images has its own branch in this repository. ```.idea/inspectionProfiles/*.xml``` are copied into corresponding Docker image as embedded IDE profiles.
+Each major release of Qodana Docker images use profiles corresponding to the branch in this repository.
 
-- Each profile should have proper name in structure ```<option name="myName" value="%profileName%" />```
 - Profile could be referenced in ```jetbrains/qodana-*``` image as ```%profileName%```
 - Profiles in branches for public images should have prefix ```qodana.```
 
