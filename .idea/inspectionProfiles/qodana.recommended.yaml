@@ -61,6 +61,7 @@ groups:
       - RedundantSuppression # not a problem actually
       - Since15 #Detects wrong language level. Should work on sanity.
       - JavadocBlankLines # Questionable. Spam on mockito, RxJava and other projects.
+      - JSUnresolvedLibraryURL #Not usefull for CI/CDk
 
       #JS
       - JSAnnotator # should work on sanity level
@@ -109,6 +110,9 @@ inspections:
       - "scope#$gitignore" # $gitignore scope available only in qodana execution
       - "scope#test:*..*"
       - "scope#file:buildSrc/*"
+  - group: "category:JavaScript and TypeScript"
+    ignore:
+      - "**/resources/**"
   - inspection: JavadocReference
     severity: WARNING # It has default ERROR severity. It's understandable for unresolved references in javadocs for editor but not on CI.
   - inspection: KtorOpenAPIUpdate
