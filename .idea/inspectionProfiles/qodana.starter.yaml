@@ -112,6 +112,7 @@ groups:
       - TrivialIfJS # Style
       - TrivialConditionalJS # Style
       - UnnecessaryLocalVariableJS # Style
+      - RegExpRedundantEscape # Style
 
 inspections:
   - group: StarterExcluded
