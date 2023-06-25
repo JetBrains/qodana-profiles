@@ -1,17 +1,13 @@
 baseProfile: "empty"
 name: "qodana.sanity"
 inspections:
-  - inspection: Annotator
+  - inspection: QodanaSanity
     enabled: true
-    options:
-      runVisitors: true
-      runAnnotators: true
-      highlightErrorElements: true
     ignore:
-      - "**"
-      - "!**.kt"
-      - "!**.java"
-      - "!**.php"
+      - "**.html"
+      - "**.groovy"
+      - "**.kts"
+      - "**.xml"
   - inspection: PhpLanguageLevelInspection
     enabled: true
   - inspection: PyUnresolvedReferencesInspection
