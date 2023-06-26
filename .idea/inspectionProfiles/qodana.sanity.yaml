@@ -8,6 +8,7 @@ inspections:
       - "**.groovy"
       - "**.kts"
       - "**.xml"
+      - "**.svg"
   - inspection: PhpLanguageLevelInspection
     enabled: true
   - inspection: PyUnresolvedReferencesInspection
