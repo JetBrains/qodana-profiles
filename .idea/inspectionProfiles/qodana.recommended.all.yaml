@@ -1,0 +1,130 @@
+baseProfile: "Project Default"
+name: "qodana.recommended.all"
+
+groups:
+  - groupId: JSRelatedInspections
+    inspections:
+      - JsCoverageInspection
+  - groupId: JSInspections
+    groups:
+      - "category:JavaScript and TypeScript"
+      - "category:Angular"
+      - "category:Vue"
+      - "JSRelatedInspections"
+  - groupId: IncludedCategories # Qodana can run any inspection, but these categories are monitored by Qodana team
+    groups:
+      - "category:Java"
+      - "category:Kotlin"
+      - "category:JVM languages"
+      - "category:Spring"
+      - "category:CDI (Contexts and Dependency Injection)"
+      - "category:Bean Validation"
+      - "category:Reactive Streams"
+      - "category:RegExp"
+      - "category:PHP"
+      - "category:Go"
+      - "category:Python"
+      - "category:General"
+      - "category:TOML"
+      - "JSInspections"
+
+      # qodana4net inspections
+      - "category:C#"
+      - "category:C++"
+      - "category:VB.NET"
+      - "category:F#"
+      - "category:Angular 2 HTML"
+      - "category:T4"
+      - "category:XAML"
+      - "category:Blazor"
+      - "category:ASP.NET route templates"
+      - "category:Razor"
+      - "category:Aspx"
+      - "category:ResX"
+      - "category:Web.Config"
+      - "category:HttpHandler or WebService"
+      - "category:RegExpBase"
+
+  - groupId: Excluded
+    groups:
+      - "ALL"
+      - "!IncludedCategories"
+      - "category:Java/Java language level migration aids" # Migration aids - only on explicit request, due to possible spam
+      - "category:JavaScript and TypeScript/ES2015 migration aids" # Migration aids - only on explicit request, due to possible spam
+      - "category:Roslyn/General" # Exclude Roslyn checks, since they are flaky now
+      - "category:C#/Spelling Issues" # Flaky spelling inspections
+      - "category:Ktor/General" # Not relevant for Qodana analysis
+      - "GLOBAL" # Qodana doesn't run global inspections by default, due to significant time consumption
+      - "severity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
+      - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
+      - "ExcludedInspections"
+
+  - groupId: ExcludedInspections # list of inspections disabled by specific reason
+    inspections:
+      - Annotator # substituted by JavaAnnotator in sanity
+      - KotlinAnnotator # works in "sanity" inspections
+      - JavaAnnotator # works in "sanity" inspections
+      - SyntaxError # should work on sanity level
+      - RedundantSuppression # not a problem actually
+      - Since15 #Detects wrong language level. Should work on sanity.
+      - JavadocBlankLines # Questionable. Spam on mockito, RxJava and other projects.
+      - JSUnresolvedLibraryURL #Not usefull for CI/CD
+
+      #JS
+      - JSAnnotator # should work on sanity level
+      - JSUnresolvedReference # should work on sanity level
+      - NpmUsedModulesInstalled # should work on sanity level
+      - PackageJsonMismatchedDependency # should work on sanity level
+      - JSTestFailedLine # Not an inspections
+      - JSUnusedGlobalSymbols #Spam
+
+      #PHP
+      - PhpLanguageLevelInspection #sanity
+      # Single problem - multiple occurences. Spam. Should be aggregated to problem with multiple locations.
+      - PhpMultipleClassDeclarationsInspection
+
+      #Python
+      - PyInterpreterInspection # Sanity
+      - PyUnresolvedReferencesInspection # Sanity
+
+      #.NET
+      - InconsistentNaming # Flaky
+
+      #C++
+      - CppInconsistentNaming # Flaky
+
+  - groupId: CoverageInspections # list of Qodana-only inspections, responsible for coverage computation
+    inspections:
+      - JvmCoverageInspection
+      - JsCoverageInspection
+      - PhpCoverageInspection
+
+inspections:
+  - group: Excluded
+    enabled: false
+  - group: ALL
+    ignore:
+      - "vendor/**"
+      - "build/**"
+      - "buildSrc/**"
+      - "builds/**"
+      - "dist/**"
+      - "tests/**"
+      - "tools/**"
+      - "vendor/**"
+      - "**.test.ts"
+      - "scope#$gitignore" # $gitignore scope available only in qodana execution
+      - "scope#test:*..*"
+      - "scope#file:buildSrc/*"
+  - group: "category:JavaScript and TypeScript"
+    ignore:
+      - "**/resources/**"
+  - inspection: JavadocReference
+    severity: WARNING # It has default ERROR severity. It's understandable for unresolved references in javadocs for editor but not on CI.
+  - inspection: KtorOpenAPIUpdate
+    enabled: true # This inspection is long running and designed for Qodana
+  - group: CoverageInspections
+    enabled: true # Explicitly enable all coverage inspections by default
+  - inspection: RiderSecurityErrorsInspection
+    enabled: true # This inpsection provides dependency vulnerability analysis for .NET projects
+
