@@ -2,5 +2,5 @@ baseProfile: "Project Default"
 name: "qodana.starter"
 
 include:
-  - "qodana.recommended.yaml"
+  - "qodana-js.recommended.yaml"
   - "qodana.starter.exclusions.yaml"
