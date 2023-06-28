@@ -117,5 +117,7 @@ inspections:
     severity: WARNING # It has default ERROR severity. It's understandable for unresolved references in javadocs for editor but not on CI.
   - inspection: KtorOpenAPIUpdate
     enabled: true # This inspection is long running and designed for Qodana
+  - inspection: RiderSecurityErrorsInspection
+    enabled: true # This inpsection provides dependency vulnerability analysis for .NET projects
   - group: CoverageInspections
     enabled: true # Explicitly enable all coverage inspections by default
