@@ -15,5 +15,5 @@ inspections:
     enabled: true
   - inspection: PyInterpreterInspection
     enabled: true
-  - inspection: RiderCompilationErrorsInspection
+  - inspection: RiderSolutionErrorsInspection
     enabled: true
