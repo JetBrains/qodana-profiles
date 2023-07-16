@@ -27,6 +27,7 @@ groups:
       - "category:General"
       - "category:TOML"
       - "JSInspections"
+      - "category:Security"
 
       # qodana4net inspections
       - "category:C#"
