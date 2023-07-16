@@ -69,6 +69,7 @@ groups:
       - Since15 #Detects wrong language level. Should work on sanity.
       - JavadocBlankLines # Questionable. Spam on mockito, RxJava and other projects.
       - JSUnresolvedLibraryURL #Not usefull for CI/CD
+      - ReassignedToPlainText # Doesn't make sense on CI/CD
 
       #JS
       - JSAnnotator # should work on sanity level
