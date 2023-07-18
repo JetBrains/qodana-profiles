@@ -108,9 +108,6 @@ groups:
       - UnnecessaryLocalVariableJS # Style
       - RegExpRedundantEscape # Style
 
-      #Ktor
-      - KtorOpenAPIUpdate
-
 inspections:
   - group: StarterExcluded
     enabled: false
