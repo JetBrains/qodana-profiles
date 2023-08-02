@@ -127,4 +127,7 @@ inspections:
     enabled: true # Explicitly enable all coverage inspections by default
   - inspection: RiderSecurityErrorsInspection
     enabled: true # This inpsection provides dependency vulnerability analysis for .NET projects
+  - inspection: NullableProblems
+    options:
+      IGNORE_EXTERNAL_SUPER_NOTNULL: true
 
