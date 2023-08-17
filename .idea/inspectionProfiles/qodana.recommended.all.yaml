@@ -101,6 +101,7 @@ groups:
       - JsCoverageInspection
       - PhpCoverageInspection
       - NetCoverageInspection
+      - PyCoverageInspection
 
 inspections:
   - group: Excluded
