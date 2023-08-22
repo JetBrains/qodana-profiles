@@ -99,6 +99,7 @@ groups:
   - groupId: CoverageInspections # list of Qodana-only inspections, responsible for coverage computation
     inspections:
       - JvmCoverageInspection
+      - GoCoverageInspection
       - JsCoverageInspection
       - PhpCoverageInspection
       - NetCoverageInspection
