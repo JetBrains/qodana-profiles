@@ -113,7 +113,7 @@ inspections:
       - "dist/**"
       - "tests/**"
       - "tools/**"
-      - "vendor/**"
+      - ".qodana/**"
       - "**.test.ts"
       - "scope#$gitignore" # $gitignore scope available only in qodana execution
       - "scope#test:*..*"
