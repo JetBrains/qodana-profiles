@@ -63,6 +63,11 @@ groups:
       - ClassWithVirtualMembersNeverInherited.Global
       - EntityNameCapturedOnly.Global
 
+  - groupId: QodanaDotNetInspections
+    inspections:
+      - NetCoverageInspection
+      - RiderSecurityErrorsInspection
+
   - groupId: LowSeverity
     groups:
       - "severity:WEAK WARNING"
@@ -79,21 +84,20 @@ groups:
       - "category:Vue"
       - "JSRelatedInspections"
 
-  - groupId: NonResharperInspections
+  - groupId: NonReSharperInspections
     groups:
       - "ALL"
       - "!ReSharperInspections"
+      - "!QodanaDotNetInspections"
 
 inspections:
   - group: JSRelatedInspections
     enabled: false
   - group: JSInspections
     enabled: false
+  - group: QodanaDotNetInspections  # Explicitly enable coverage and dependency vulnerability analysis by default
+    enabled: true
   - group: ALL
     ignore:
       - "scope#$gitignore" # $gitignore scope available only in qodana execution
       - "scope#$UnrealEngine" # Ignore Unreal Engine files by default
-  - inspection: NetCoverageInspection
-    enabled: true # Explicitly enable coverage inspection by default
-  - inspection: RiderSecurityErrorsInspection
-    enabled: true # This inpsection provides dependency vulnerability analysis for .NET projects
