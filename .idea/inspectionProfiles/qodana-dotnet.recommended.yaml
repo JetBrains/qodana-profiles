@@ -20,7 +20,7 @@ groups:
       - "category:F#"
       - "category:ASP.NET route templates"
       - "category:RegExpBase"
-      - "category:XML"
+      - "category:XML/Spelling Issues"
       - "category:T4"
       - "category:Roslyn"
 
@@ -81,7 +81,7 @@ groups:
       - "category:Vue"
       - "JSRelatedInspections"
 
-  - groupId: Excluded
+  - groupId: DotnetExcluded
     groups:
       - "GLOBAL" # Qodana doesn't run global inspections by default, due to significant time consumption
       - "JSRelatedInspections"
@@ -90,7 +90,7 @@ groups:
       - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
 
 inspections:
-  - group: Excluded
+  - group: DotnetExcluded
     enabled: false
   - group: QodanaDotNetInspections  # Explicitly enable coverage and dependency vulnerability analysis by default
     enabled: true
