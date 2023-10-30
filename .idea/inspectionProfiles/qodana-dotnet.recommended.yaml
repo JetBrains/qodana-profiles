@@ -99,5 +99,6 @@ inspections:
     enabled: true
   - group: ALL
     ignore:
+      - ".qodana/**"
       - "scope#$gitignore" # $gitignore scope available only in qodana execution
       - "scope#$UnrealEngine" # Ignore Unreal Engine files by default
