@@ -1,0 +1,99 @@
+baseProfile: "Project Default"
+name: "qodana.recommended"
+
+groups:
+  - groupId: ReSharperInspections
+    groups:
+      - "category:C++"
+      - "category:C#"
+      - "category:XAML"
+      - "category:VB.NET"
+      - "category:Aspx"
+      - "category:HTML"
+      - "category:ResX"
+      - "category:Web.Config"
+      - "category:Razor"
+      - "category:Blazor"
+      - "category:Angular 2 HTML"
+      - "category:HttpHandler or WebService"
+      - "category:F#"
+      - "category:ASP.NET route templates"
+      - "category:RegExpBase"
+      - "category:XML"
+      - "category:T4"
+      - "category:Roslyn"
+
+  - groupId: ReSharperGlobalInspections
+    inspections:
+      - MemberCanBePrivate.Global
+      - MemberCanBeProtected.Global
+      - MemberCanBeInternal
+      - MemberCanBeFileLocal
+      - MemberCanBeMadeStatic.Global
+      - ClassCanBeSealed.Global
+      - FieldCanBeMadeReadOnly.Global
+      - StructCanBeMadeReadOnly
+      - AutoPropertyCanBeMadeGetOnly.Global
+      - PropertyCanBeMadeInitOnly.Global
+      - ConvertToConstant.Global
+      - ParameterTypeCanBeEnumerable.Global
+      - ReturnTypeCanBeEnumerable.Global
+      - ClassNeverInstantiated.Global
+      - NotAccessedField.Global
+      - EventNeverSubscribedTo.Global
+      - UnassignedField.Global
+      - UnusedAutoPropertyAccessor.Global
+      - NotAccessedPositionalProperty.Global
+      - EventNeverInvoked.Global
+      - SuspiciousTypeConversion.Global
+      - CollectionNeverUpdated.Global
+      - CollectionNeverQueried.Global
+      - RedundantUsingDirective.Global
+      - IntroduceOptionalParameters.Global
+      - RedundantOverload.Global
+      - UnusedMember.Global
+      - UnusedType.Global
+      - UnusedMemberInSuper.Global
+      - UnusedMemberHierarchy.Global
+      - UnusedMethodReturnValue.Global
+      - UnusedParameter.Global
+      - ParameterOnlyUsedForPreconditionCheck.Global
+      - OutParameterValueIsAlwaysDiscarded.Global
+      - VirtualMemberNeverOverridden.Global
+      - ClassWithVirtualMembersNeverInherited.Global
+      - EntityNameCapturedOnly.Global
+
+  - groupId: LowSeverity
+    groups:
+      - "severity:WEAK WARNING"
+      - "severity:HINT"
+
+  # JavaScript inspections for future use
+  - groupId: JSRelatedInspections
+    inspections:
+      - JsCoverageInspection
+  - groupId: JSInspections
+    groups:
+      - "category:JavaScript and TypeScript"
+      - "category:Angular"
+      - "category:Vue"
+      - "JSRelatedInspections"
+
+  - groupId: NonResharperInspections
+    groups:
+      - "ALL"
+      - "!ReSharperInspections"
+
+inspections:
+  - group: JSRelatedInspections
+    enabled: false
+  - group: JSInspections
+    enabled: false
+  - group: ALL
+    ignore:
+      - "scope#$gitignore" # $gitignore scope available only in qodana execution
+      - "scope#$UnrealEngine" # Ignore Unreal Engine files by default
+  - inspection: NetCoverageInspection
+    enabled: true # Explicitly enable coverage inspection by default
+  - inspection: RiderSecurityErrorsInspection
+    enabled: true # This inpsection provides dependency vulnerability analysis for .NET projects
