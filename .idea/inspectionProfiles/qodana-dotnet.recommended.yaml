@@ -2,14 +2,15 @@ baseProfile: "Project Default"
 name: "qodana.recommended"
 
 groups:
-  - groupId: ReSharperInspections
+  - groupId: ReSharperInspections   # ReSharper inspections are enabled by default
     groups:
       - "category:C++"
       - "category:C#"
       - "category:XAML"
       - "category:VB.NET"
       - "category:Aspx"
-      - "category:HTML"
+      - "category:HTML/Common Practices and Code Improvements"
+      - "category:HTML/Potential Code Quality Issues"
       - "category:ResX"
       - "category:Web.Config"
       - "category:Razor"
@@ -23,7 +24,7 @@ groups:
       - "category:T4"
       - "category:Roslyn"
 
-  - groupId: ReSharperGlobalInspections
+  - groupId: ReSharperGlobalInspections  # ReSharper global inspections that could be disabled for faster non-SWEA scan
     inspections:
       - MemberCanBePrivate.Global
       - MemberCanBeProtected.Global
@@ -63,20 +64,16 @@ groups:
       - ClassWithVirtualMembersNeverInherited.Global
       - EntityNameCapturedOnly.Global
 
-  - groupId: QodanaDotNetInspections
+  - groupId: QodanaDotNetInspections # Qodana inspections for .NET - coverage and vulnerability analysis
     inspections:
       - NetCoverageInspection
       - RiderSecurityErrorsInspection
 
-  - groupId: LowSeverity
-    groups:
-      - "severity:WEAK WARNING"
-      - "severity:HINT"
-
-  # JavaScript inspections for future use
+  # JavaScript inspections
   - groupId: JSRelatedInspections
     inspections:
       - JsCoverageInspection
+
   - groupId: JSInspections
     groups:
       - "category:JavaScript and TypeScript"
@@ -84,16 +81,16 @@ groups:
       - "category:Vue"
       - "JSRelatedInspections"
 
-  - groupId: NonReSharperInspections
+  - groupId: Excluded
     groups:
-      - "ALL"
-      - "!ReSharperInspections"
-      - "!QodanaDotNetInspections"
+      - "GLOBAL" # Qodana doesn't run global inspections by default, due to significant time consumption
+      - "JSRelatedInspections"
+      - "JSInspections"
+      - "severity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
+      - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
 
 inspections:
-  - group: JSRelatedInspections
-    enabled: false
-  - group: JSInspections
+  - group: Excluded
     enabled: false
   - group: QodanaDotNetInspections  # Explicitly enable coverage and dependency vulnerability analysis by default
     enabled: true
