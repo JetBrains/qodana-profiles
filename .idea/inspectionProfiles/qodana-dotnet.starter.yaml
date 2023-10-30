@@ -8,5 +8,5 @@ include:
 inspections:
   - group: LowSeverity # CLT doesn't provide them by default
     enabled: false
-  - group: NonResharperInspections
+  - group: NonReSharperInspections
     enabled: false
