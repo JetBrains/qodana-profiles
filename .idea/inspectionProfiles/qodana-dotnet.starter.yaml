@@ -5,6 +5,18 @@ include:
   - "qodana-dotnet.recommended.yaml"
   - "qodana.starter.exclusions.yaml"
 
+groups:
+  - groupId: NonReSharperInspections
+    groups:
+      - "ALL"
+      - "!ReSharperInspections"
+      - "!QodanaDotNetInspections"
+
+  - groupId: LowSeverity
+    groups:
+      - "severity:WEAK WARNING"
+      - "severity:HINT"
+
 inspections:
   - group: LowSeverity # CLT doesn't provide them by default
     enabled: false
