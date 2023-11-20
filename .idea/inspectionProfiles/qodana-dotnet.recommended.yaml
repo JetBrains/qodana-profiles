@@ -81,11 +81,17 @@ groups:
       - "category:Vue"
       - "JSRelatedInspections"
 
+  - groupId: FlakyInspections
+    inspections:
+      - InconsistentNaming
+      - SpellCheckingInspection
+
   - groupId: DotnetExcluded
     groups:
       - "GLOBAL" # Qodana doesn't run global inspections by default, due to significant time consumption
       - "JSRelatedInspections"
       - "JSInspections"
+      - "FlakyInspections"
       - "severity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
       - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
 
