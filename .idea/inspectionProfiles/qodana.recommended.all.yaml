@@ -28,6 +28,7 @@ groups:
       - "category:TOML"
       - "JSInspections"
       - "category:Security"
+      - "category:Android"
 
       # qodana4net inspections
       - "category:C#"
