@@ -65,7 +65,8 @@ groups:
       - UNUSED_IMPORT # Spam and not a warning in IDE
       - SwitchStatementWithTooFewBranches # Style
       - TrivialIf # Style
-
+      #Jvm
+      - SystemGetProperty #Style
       #Kotlin
       - KotlinDeprecation # Possible spam
 
