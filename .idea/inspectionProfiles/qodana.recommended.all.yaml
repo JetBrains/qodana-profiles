@@ -74,11 +74,13 @@ groups:
 
       #JS
       - JSAnnotator # should work on sanity level
+      - JSFileReferences # sanity level
       - JSUnresolvedReference # should work on sanity level
       - NpmUsedModulesInstalled # should work on sanity level
       - PackageJsonMismatchedDependency # should work on sanity level
       - JSTestFailedLine # Not an inspections
       - JSUnusedGlobalSymbols #Spam
+      - JSValidateTypes # candidate to sanity
 
       #PHP
       - PhpLanguageLevelInspection #sanity
