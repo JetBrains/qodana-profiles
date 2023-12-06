@@ -17,5 +17,3 @@ inspections:
     enabled: true
   - inspection: RiderSolutionErrorsInspection
     enabled: true
-  - inspection: JSFileReferences
-    enabled: true
