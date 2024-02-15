@@ -1,14 +1,6 @@
 baseProfile: "empty"
 name: "qodana.sanity"
 inspections:
-  - inspection: QodanaSanity
-    enabled: true
-    ignore:
-      - "**.html"
-      - "**.groovy"
-      - "**.kts"
-      - "**.xml"
-      - "**.svg"
   - inspection: PhpLanguageLevelInspection
     enabled: true
   - inspection: PyUnresolvedReferencesInspection
