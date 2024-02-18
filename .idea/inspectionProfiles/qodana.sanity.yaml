@@ -1,6 +1,10 @@
 baseProfile: "empty"
 name: "qodana.sanity"
 inspections:
+  - inspection: QodanaJavaSanity
+    enabled: true
+  - inspection: QodanaKotlinSanity
+    enabled: true
   - inspection: PhpLanguageLevelInspection
     enabled: true
   - inspection: PyUnresolvedReferencesInspection
