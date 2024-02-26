@@ -13,6 +13,7 @@ groups:
       - "JSRelatedInspections"
   - groupId: IncludedCategories # Qodana can run any inspection, but these categories are monitored by Qodana team
     groups:
+      - "category:FlexInspect"
       - "category:Java"
       - "category:Kotlin"
       - "category:JVM languages"
