@@ -98,6 +98,9 @@ groups:
       #C++
       - CppInconsistentNaming # Flaky
 
+      #Security
+      - HttpUrlsUsage # Spam
+
   - groupId: CoverageInspections # list of Qodana-only inspections, responsible for coverage computation
     inspections:
       - JvmCoverageInspection
