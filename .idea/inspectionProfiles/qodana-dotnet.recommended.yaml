@@ -100,6 +100,8 @@ inspections:
     enabled: false
   - group: QodanaDotNetInspections  # Explicitly enable coverage and dependency vulnerability analysis by default
     enabled: true
+  - inspection: HttpUrlsUsage # Spam
+    enabled: false
   - group: ALL
     ignore:
       - ".qodana/**"
