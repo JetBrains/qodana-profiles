@@ -111,6 +111,9 @@ groups:
       #Ktor
       - KtorOpenAPIUpdate
 
+      #Security
+      - HttpUrlsUsage # Spam
+
 inspections:
   - group: StarterExcluded
     enabled: false
