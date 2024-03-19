@@ -13,7 +13,6 @@ groups:
       - "JSRelatedInspections"
   - groupId: IncludedCategories # Qodana can run any inspection, but these categories are monitored by Qodana team
     groups:
-      - "category:FlexInspect"
       - "category:Java"
       - "category:Kotlin"
       - "category:JVM languages"
@@ -60,6 +59,7 @@ groups:
       - "severity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
       - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
       - "ExcludedInspections"
+      - "!category:FlexInspect" # FlexInspect enabled by default (even global)
 
   - groupId: ExcludedInspections # list of inspections disabled by specific reason
     inspections:
