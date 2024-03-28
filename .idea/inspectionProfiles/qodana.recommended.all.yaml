@@ -50,6 +50,7 @@ groups:
     groups:
       - "ALL"
       - "!IncludedCategories"
+      - "!DependencyAnalysis"
       - "category:Java/Java language level migration aids" # Migration aids - only on explicit request, due to possible spam
       - "category:JavaScript and TypeScript/ES2015 migration aids" # Migration aids - only on explicit request, due to possible spam
       - "category:Roslyn/General" # Exclude Roslyn checks, since they are flaky now
@@ -110,6 +111,10 @@ groups:
       - NetCoverageInspection
       - PyCoverageInspection
 
+  - groupId: DependencyAnalysis # list of Qodana-only inspections, responsible for license audit
+    inspections:
+      - CheckDependencyLicenses
+
 inspections:
   - group: Excluded
     enabled: false
@@ -137,6 +142,8 @@ inspections:
     enabled: true # This inspection is long running and designed for Qodana
   - group: CoverageInspections
     enabled: true # Explicitly enable all coverage inspections by default
+  - group: DependencyAnalysis
+    enabled: true # Enable License Audit by default
   - inspection: RiderSecurityErrorsInspection
     enabled: true # This inpsection provides dependency vulnerability analysis for .NET projects
   - inspection: NullableProblems
