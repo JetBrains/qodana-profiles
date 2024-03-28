@@ -50,7 +50,6 @@ groups:
     groups:
       - "ALL"
       - "!IncludedCategories"
-      - "!DependencyAnalysis"
       - "category:Java/Java language level migration aids" # Migration aids - only on explicit request, due to possible spam
       - "category:JavaScript and TypeScript/ES2015 migration aids" # Migration aids - only on explicit request, due to possible spam
       - "category:Roslyn/General" # Exclude Roslyn checks, since they are flaky now
