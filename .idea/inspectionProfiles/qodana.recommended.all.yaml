@@ -82,6 +82,7 @@ groups:
       - JSTestFailedLine # Not an inspections
       - JSUnusedGlobalSymbols #Spam
       - JSValidateTypes # candidate to sanity
+      - JSCheckFunctionSignatures # Flaky and produces FPs, QD-8748
 
       #PHP
       - PhpLanguageLevelInspection #sanity
