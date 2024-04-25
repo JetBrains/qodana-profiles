@@ -99,6 +99,7 @@ groups:
       - "JSInspections"
       - "FlakyInspections"
       - "ProofreadingInspections"
+      - "Annotator" # Causes exceptions on MSBuild related files
       - "severity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
       - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
 
