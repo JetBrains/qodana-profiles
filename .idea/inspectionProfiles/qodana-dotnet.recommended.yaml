@@ -92,6 +92,10 @@ groups:
       - LanguageDetectionInspection
       - GrazieInspection
 
+  - groupId: UnsupportedInspections # Annotator causes exceptions on MSBuild related files
+    inspections:
+      - Annotator
+
   - groupId: DotnetExcluded
     groups:
       - "GLOBAL" # Qodana doesn't run global inspections by default, due to significant time consumption
@@ -99,7 +103,7 @@ groups:
       - "JSInspections"
       - "FlakyInspections"
       - "ProofreadingInspections"
-      - "Annotator" # Causes exceptions on MSBuild related files
+      - "UnsupportedInspections"
       - "severity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
       - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
 
