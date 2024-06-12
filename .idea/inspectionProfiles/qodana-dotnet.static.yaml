@@ -16,8 +16,6 @@ groups:
 
   - groupId: RiderStaticNonSanityInspections
     inspections:
-      - UnityPerformanceHighlighting
-      - UnityGutterMarks
       - AsmDefWarnings
       - ShaderLabErrors
       - ShaderLabWarnings
