@@ -1,6 +1,9 @@
 baseProfile: "Project Default"
 name: "qodana.recommended"
 
+include:
+  - "qodana-dotnet.static.yaml"
+
 groups:
   - groupId: ReSharperInspections   # ReSharper inspections are enabled by default
     groups:
@@ -23,6 +26,7 @@ groups:
       - "category:XML/Spelling Issues"
       - "category:T4"
       - "category:Roslyn"
+      - "RiderStaticNonSanityInspections"
 
   - groupId: ReSharperGlobalInspections  # ReSharper global inspections that could be disabled for faster non-SWEA scan
     inspections:

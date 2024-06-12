@@ -1,5 +1,9 @@
 baseProfile: "empty"
 name: "qodana.sanity"
+
+include:
+  - "qodana-dotnet.static.yaml"
+
 inspections:
   - inspection: QodanaJavaSanity
     enabled: true
@@ -12,4 +16,6 @@ inspections:
   - inspection: PyInterpreterInspection
     enabled: true
   - inspection: RiderSolutionErrorsInspection
+    enabled: true
+  - group: RiderStaticSanityInspections
     enabled: true
