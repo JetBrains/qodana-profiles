@@ -26,7 +26,7 @@ groups:
       - "category:XML/Spelling Issues"
       - "category:T4"
       - "category:Roslyn"
-      - "RiderStaticNonSanityInspections"
+      - "!RiderStaticSanityInspections"
 
   - groupId: ReSharperGlobalInspections  # ReSharper global inspections that could be disabled for faster non-SWEA scan
     inspections:
@@ -108,6 +108,7 @@ groups:
       - "FlakyInspections"
       - "ProofreadingInspections"
       - "UnsupportedInspections"
+      - "RiderStaticSanityInspections" # Inspections that appear in sanity profile
       - "severity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
       - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
 
