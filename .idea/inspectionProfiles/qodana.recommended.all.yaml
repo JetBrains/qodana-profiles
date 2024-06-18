@@ -72,6 +72,7 @@ groups:
       - JavadocBlankLines # Questionable. Spam on mockito, RxJava and other projects.
       - JSUnresolvedLibraryURL #Not usefull for CI/CD
       - ReassignedToPlainText # Doesn't make sense on CI/CD
+      - DifferentKotlinGradleVersion # All problem cases covered in "sanity" inspections
 
       #JS
       - JSAnnotator # should work on sanity level
