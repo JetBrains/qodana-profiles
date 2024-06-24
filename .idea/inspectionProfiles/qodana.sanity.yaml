@@ -15,7 +15,5 @@ inspections:
     enabled: true
   - inspection: PyInterpreterInspection
     enabled: true
-  - inspection: RiderSolutionErrorsInspection
-    enabled: true
   - group: RiderStaticSanityInspections
     enabled: true

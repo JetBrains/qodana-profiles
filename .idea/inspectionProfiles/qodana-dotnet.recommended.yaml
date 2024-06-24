@@ -71,7 +71,6 @@ groups:
   - groupId: QodanaDotNetInspections # Qodana inspections for .NET - coverage and vulnerability analysis
     inspections:
       - NetCoverageInspection
-      - RiderSecurityErrorsInspection
       - CheckDependencyLicenses
 
   # JavaScript inspections
