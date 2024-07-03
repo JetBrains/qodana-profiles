@@ -29,22 +29,11 @@ groups:
       - "JSInspections"
       - "category:Security"
 
-      # qodana4net inspections
-      - "category:C#"
-      - "category:C++"
-      - "category:VB.NET"
-      - "category:F#"
-      - "category:Angular 2 HTML"
-      - "category:T4"
-      - "category:XAML"
-      - "category:Blazor"
-      - "category:ASP.NET route templates"
-      - "category:Razor"
-      - "category:Aspx"
-      - "category:ResX"
-      - "category:Web.Config"
-      - "category:HttpHandler or WebService"
-      - "category:RegExpBase"
+      # qodana4cpp inspections
+      - "category:C_C++"
+      - "category:Objective-C"
+      - "category:CMake"
+      - "category:Clangd Inspections"
 
   - groupId: Excluded
     groups:
@@ -52,8 +41,7 @@ groups:
       - "!IncludedCategories"
       - "category:Java/Java language level migration aids" # Migration aids - only on explicit request, due to possible spam
       - "category:JavaScript and TypeScript/ES2015 migration aids" # Migration aids - only on explicit request, due to possible spam
-      - "category:Roslyn/General" # Exclude Roslyn checks, since they are flaky now
-      - "category:C#/Spelling Issues" # Flaky spelling inspections
+      - "category:C_C++/Compiler Issues" # Sanity inspections in CLion
       - "category:Ktor/General" # Not relevant for Qodana analysis
       - "GLOBAL" # Qodana doesn't run global inspections by default, due to significant time consumption
       - "severity:INFORMATION" # Qodana doesn't run "invisible" and "technical" in IDE inspections
@@ -94,12 +82,6 @@ groups:
       - PyInterpreterInspection # Sanity
       - PyUnresolvedReferencesInspection # Sanity
 
-      #.NET
-      - InconsistentNaming # Flaky
-
-      #C++
-      - CppInconsistentNaming # Flaky
-
       #Security
       - HttpUrlsUsage # Spam
 
@@ -109,7 +91,6 @@ groups:
       - GoCoverageInspection
       - JsCoverageInspection
       - PhpCoverageInspection
-      - NetCoverageInspection
       - PyCoverageInspection
 
   - groupId: DependencyAnalysis # list of Qodana-only inspections, responsible for license audit
@@ -145,8 +126,6 @@ inspections:
     enabled: true # Explicitly enable all coverage inspections by default
   - group: DependencyAnalysis
     enabled: true # Enable License Audit by default
-  - inspection: RiderSecurityErrorsInspection
-    enabled: true # This inpsection provides dependency vulnerability analysis for .NET projects
   - inspection: NullableProblems
     options:
       IGNORE_EXTERNAL_SUPER_NOTNULL: true

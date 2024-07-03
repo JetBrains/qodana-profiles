@@ -4,6 +4,11 @@ name: "qodana.sanity"
 include:
   - "qodana-dotnet.static.yaml"
 
+groups:
+  - groupId: ClionSanity
+    groups:
+      - "category:C_C++/Compiler Issues"
+
 inspections:
   - inspection: QodanaJavaSanity
     enabled: true
@@ -16,4 +21,6 @@ inspections:
   - inspection: PyInterpreterInspection
     enabled: true
   - group: RiderStaticSanityInspections
+    enabled: true
+  - group: ClionSanity
     enabled: true
