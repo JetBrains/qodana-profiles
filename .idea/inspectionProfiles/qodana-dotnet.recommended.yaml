@@ -72,6 +72,7 @@ groups:
     inspections:
       - NetCoverageInspection
       - CheckDependencyLicenses
+      - RiderSecurityErrorsInspection
 
   # JavaScript inspections
   - groupId: JSRelatedInspections
