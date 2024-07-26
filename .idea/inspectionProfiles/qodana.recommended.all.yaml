@@ -126,6 +126,9 @@ inspections:
     enabled: true # Explicitly enable all coverage inspections by default
   - group: DependencyAnalysis
     enabled: true # Enable License Audit by default
+  - inspection: PyPep8Inspection
+    severity: WEAK WARNING # It has default INFORMATION severity because it makes a lot of noise during coding. For CI makes sense to enable it
+    enabled: true # Explicitly enable, because it is disabled by default INFORMATION severity.
   - inspection: NullableProblems
     options:
       IGNORE_EXTERNAL_SUPER_NOTNULL: true
