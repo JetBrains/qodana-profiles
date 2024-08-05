@@ -122,5 +122,6 @@ inspections:
   - group: ALL
     ignore:
       - ".qodana/**"
+      - "**/*.DotSettings" # Ignore .DotSettings files by default
       - "scope#$gitignore" # $gitignore scope available only in qodana execution
       - "scope#$UnrealEngine" # Ignore Unreal Engine files by default
