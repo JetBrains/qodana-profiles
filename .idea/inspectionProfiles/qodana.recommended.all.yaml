@@ -113,6 +113,10 @@ groups:
       - PhpCoverageInspection
       - PyCoverageInspection
 
+  - groupId: MetricsInspections # list of inspections responsible for calculating code quality metrics
+    inspections:
+      - JvmLinesOfCodeInspection
+
   - groupId: DependencyAnalysis # list of Qodana-only inspections, responsible for license audit
     inspections:
       - CheckDependencyLicenses
@@ -143,6 +147,8 @@ inspections:
     enabled: true # This inspection is long running and designed for Qodana
   - group: CoverageInspections
     enabled: true # Explicitly enable all coverage inspections by default
+  - group: MetricsInspections
+    enabled: true # Explicitly enable all metrics inspections by default
   - group: DependencyAnalysis
     enabled: true # Enable License Audit by default
   - inspection: PyPep8Inspection
