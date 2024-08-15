@@ -116,6 +116,7 @@ groups:
   - groupId: MetricsInspections # list of inspections responsible for calculating code quality metrics
     inspections:
       - JvmLinesOfCodeInspection
+      - CyclomaticComplexityInspection
 
   - groupId: DependencyAnalysis # list of Qodana-only inspections, responsible for license audit
     inspections:
