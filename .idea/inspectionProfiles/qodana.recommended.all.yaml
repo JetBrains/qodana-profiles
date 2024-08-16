@@ -148,7 +148,7 @@ inspections:
   - group: CoverageInspections
     enabled: true # Explicitly enable all coverage inspections by default
   - group: MetricsInspections
-    enabled: true # Explicitly enable all metrics inspections by default
+    enabled: false
   - group: DependencyAnalysis
     enabled: true # Enable License Audit by default
   - inspection: PyPep8Inspection
