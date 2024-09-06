@@ -65,7 +65,6 @@ groups:
       - "severity:TEXT ATTRIBUTES" # Qodana don't run "invisible" and "technical" in IDE inspections
       - "ExcludedInspections"
       - "!category:FlexInspect" # FlexInspect enabled by default (even global)
-      - "!AndroidInspections"
 
   - groupId: ExcludedInspections # list of inspections disabled by specific reason
     inspections:
