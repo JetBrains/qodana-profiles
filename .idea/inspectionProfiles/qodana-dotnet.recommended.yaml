@@ -84,6 +84,7 @@ groups:
       - "category:JavaScript and TypeScript"
       - "category:Angular"
       - "category:Vue"
+      - "category:MongoJS"
       - "JSRelatedInspections"
 
   - groupId: FlakyInspections
