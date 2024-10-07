@@ -135,6 +135,7 @@ inspections:
       - "tests/**"
       - "tools/**"
       - ".qodana/**"
+      - "**/node_modules/**"
       - "**.test.ts"
       - "scope#$gitignore" # $gitignore scope available only in qodana execution
       - "scope#test:*..*"
